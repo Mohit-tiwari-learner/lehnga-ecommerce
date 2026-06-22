@@ -35,16 +35,21 @@ function AnnouncementBar() {
   );
 }
 
+// ... existing imports
+import { SearchModal } from "./SearchModal";
+
 export function Header() {
   const { cartCount, setIsCartOpen } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   const toggleDropdown = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
 
   return (
+    <>
     <header className="w-full sticky top-0 z-50 bg-white border-b border-gray-100 flex flex-col">
       <AnnouncementBar />
       
@@ -72,7 +77,10 @@ export function Header() {
 
         {/* Icons */}
         <div className="flex items-center gap-4 lg:gap-6 text-[#111111]">
-          <button className="hover:text-rajgharana-gold transition-colors hidden sm:block">
+          <button 
+            className="hover:text-rajgharana-gold transition-colors hidden sm:block"
+            onClick={() => setIsSearchOpen(true)}
+          >
             <Search size={22} strokeWidth={1.5} />
           </button>
           <Link href="/wishlist" className="hover:text-rajgharana-gold transition-colors hidden sm:block">
@@ -246,7 +254,10 @@ export function Header() {
                   <Link href="/faq" className="hover:text-rajgharana-gold transition-colors">Help / FAQ</Link>
                 </div>
                 <div className="flex items-center gap-6">
-                  <button className="hover:text-rajgharana-gold transition-colors flex items-center gap-2">
+                  <button 
+                    onClick={() => { setIsMobileMenuOpen(false); setIsSearchOpen(true); }}
+                    className="hover:text-rajgharana-gold transition-colors flex items-center gap-2"
+                  >
                     <Search size={18} /> <span className="text-xs">Search</span>
                   </button>
                   <Link href="/wishlist" className="hover:text-rajgharana-gold transition-colors flex items-center gap-2">
@@ -260,5 +271,7 @@ export function Header() {
         )}
       </AnimatePresence>
     </header>
+    <SearchModal isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+    </>
   );
 }
