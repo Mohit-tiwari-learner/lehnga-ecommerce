@@ -78,8 +78,9 @@ export function Header() {
         {/* Icons */}
         <div className="flex items-center gap-4 lg:gap-6 text-[#111111]">
           <button 
-            className="hover:text-rajgharana-gold transition-colors hidden sm:block"
+            className="hover:text-rajgharana-gold transition-colors block"
             onClick={() => setIsSearchOpen(true)}
+            aria-label="Search"
           >
             <Search size={22} strokeWidth={1.5} />
           </button>
