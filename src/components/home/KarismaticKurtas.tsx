@@ -50,7 +50,7 @@ export function KarismaticKurtas() {
                 Karismatic<br/>
                 <span className="italic mt-2">Kurtas</span>
               </h3>
-              <div className="mt-8 inline-block border-b border-white text-white font-sans text-xs tracking-widest uppercase pb-1 hover:text-nakhrali-gold hover:border-nakhrali-gold transition-colors">
+              <div className="mt-8 inline-block border-b border-white text-white font-sans text-xs tracking-widest uppercase pb-1 hover:text-rajgharana-gold hover:border-rajgharana-gold transition-colors">
                 Shop Collection
               </div>
             </div>

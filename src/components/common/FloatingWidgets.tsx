@@ -54,7 +54,7 @@ export function FloatingWidgets() {
               N
             </div>
             <div>
-              <h4 className="font-sans font-medium text-sm">Nakhrali Support</h4>
+              <h4 className="font-sans font-medium text-sm">Rajgharana Support</h4>
               <p className="font-sans text-xs text-gray-300">Typically replies in minutes</p>
             </div>
           </div>
@@ -62,7 +62,7 @@ export function FloatingWidgets() {
           {/* Chat Body */}
           <div className="p-4 h-64 overflow-y-auto bg-gray-50 flex flex-col gap-4">
             <div className="bg-white p-3 rounded-lg rounded-tl-none shadow-sm text-sm font-sans text-gray-700 self-start max-w-[85%] border border-gray-100">
-              Hello! 👋 Welcome to Nakhrali. How can we assist you with your ethnic wardrobe today?
+              Hello! 👋 Welcome to Rajgharana. How can we assist you with your ethnic wardrobe today?
             </div>
           </div>
 
@@ -71,9 +71,9 @@ export function FloatingWidgets() {
             <input 
               type="text" 
               placeholder="Type your message..." 
-              className="flex-1 bg-gray-100 rounded-full px-4 py-2 text-sm font-sans outline-none focus:ring-1 focus:ring-nakhrali-gold"
+              className="flex-1 bg-gray-100 rounded-full px-4 py-2 text-sm font-sans outline-none focus:ring-1 focus:ring-rajgharana-gold"
             />
-            <button className="w-10 h-10 rounded-full bg-nakhrali-gold text-white flex items-center justify-center hover:bg-[#d4af37]/90 transition-colors">
+            <button className="w-10 h-10 rounded-full bg-rajgharana-gold text-white flex items-center justify-center hover:bg-[#d4af37]/90 transition-colors">
               <Send size={16} className="-ml-0.5 mt-0.5" />
             </button>
           </div>

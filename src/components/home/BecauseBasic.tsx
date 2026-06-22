@@ -60,7 +60,7 @@ export function BecauseBasic() {
               <span className="italic font-light">Isn't the Plan</span>
             </h2>
             <p className="text-white/80 tracking-widest text-xs font-sans uppercase border-t border-white/20 pt-4 w-1/2">
-              BY NAKHRALI
+              BY RAJGHARANA
             </p>
           </div>
 

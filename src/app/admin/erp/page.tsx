@@ -103,7 +103,7 @@ export default function ERPDashboardPage() {
               <Store size={18} />
               <h3 className="font-semibold">Retail Performance</h3>
             </div>
-            <Link href="/admin/erp/shops" className="text-xs font-medium text-nakhrali-gold hover:underline">View All Shops</Link>
+            <Link href="/admin/erp/shops" className="text-xs font-medium text-rajgharana-gold hover:underline">View All Shops</Link>
           </div>
           <div className="p-4 flex flex-col gap-4">
             {shops.map(shop => (
@@ -128,7 +128,7 @@ export default function ERPDashboardPage() {
               <PackageOpen size={18} />
               <h3 className="font-semibold">Warehouse Capacity</h3>
             </div>
-            <Link href="/admin/erp/inventory" className="text-xs font-medium text-nakhrali-gold hover:underline">Manage Inventory</Link>
+            <Link href="/admin/erp/inventory" className="text-xs font-medium text-rajgharana-gold hover:underline">Manage Inventory</Link>
           </div>
           <div className="p-4 flex flex-col gap-4">
             {inventories.map(inv => {

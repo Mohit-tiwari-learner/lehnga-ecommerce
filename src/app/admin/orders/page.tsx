@@ -83,7 +83,7 @@ export default function OrdersPage() {
                 <td className="px-6 py-4 text-right">
                   <button 
                     onClick={() => handleUpdateOrderStatus(o.id, o.status)}
-                    className="text-xs tracking-widest font-sans font-semibold uppercase hover:text-nakhrali-gold transition-colors text-gray-500 border border-gray-200 px-3 py-1.5 rounded hover:border-nakhrali-gold"
+                    className="text-xs tracking-widest font-sans font-semibold uppercase hover:text-rajgharana-gold transition-colors text-gray-500 border border-gray-200 px-3 py-1.5 rounded hover:border-rajgharana-gold"
                   >
                     Fulfill Status
                   </button>

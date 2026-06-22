@@ -29,7 +29,7 @@ export default function ShopsManagementPage() {
               {/* Shop Header */}
               <div className="p-5 border-b border-gray-100 bg-gray-50 flex items-start justify-between">
                 <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded bg-nakhrali-gold/10 text-nakhrali-gold flex items-center justify-center">
+                  <div className="w-10 h-10 rounded bg-rajgharana-gold/10 text-rajgharana-gold flex items-center justify-center">
                     <Store size={20} />
                   </div>
                   <div>
@@ -66,7 +66,7 @@ export default function ShopsManagementPage() {
                   
                   {/* Progress Bar */}
                   <div className="w-full bg-gray-100 rounded-full h-2 mt-1">
-                    <div className={`h-2 rounded-full ${progress >= 100 ? 'bg-green-500' : 'bg-nakhrali-gold'}`} style={{ width: `${Math.min(progress, 100)}%`}}></div>
+                    <div className={`h-2 rounded-full ${progress >= 100 ? 'bg-green-500' : 'bg-rajgharana-gold'}`} style={{ width: `${Math.min(progress, 100)}%`}}></div>
                   </div>
                   <div className="flex items-center justify-between text-xs text-gray-500">
                     <span>{progress.toFixed(0)}% of Target</span>

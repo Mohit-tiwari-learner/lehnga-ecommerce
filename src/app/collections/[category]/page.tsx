@@ -30,7 +30,7 @@ const CATEGORY_CONTENT: Record<string, {
   faqs: { q: string; a: string }[];
 }> = {
   "sarees": {
-    title: "Sarees by Nakhrali",
+    title: "Sarees by Rajgharana",
     subtitle: "Modern Drapes & Heritage Weaves",
     description: "Wrap yourself in 6 yards of pure elegance. Our sarees showcase handloom artistry, modal silks, tissue drapes, and Banarasi zari work made for the contemporary muse.",
     heroImage: "/extracted_photos/pure-and-soft-dolla-silk-fancy-fabric-with-beautiful-digital-print-on-chaniya-choli-reseller-in-surat-pratha/page-0.png",
@@ -52,7 +52,7 @@ const CATEGORY_CONTENT: Record<string, {
       { name: "Kiran R.", rating: 4, text: "Lovely colors and fits perfectly with the customized blouses. Highly recommended for festive wear.", location: "Mumbai, India" },
     ],
     faqs: [
-      { q: "How should I care for my Nakhrali handloom saree?", a: "We highly recommend dry cleaning only for all silk, zari, and organza sarees to preserve their color and detailed handwork." },
+      { q: "How should I care for my Rajgharana handloom saree?", a: "We highly recommend dry cleaning only for all silk, zari, and organza sarees to preserve their color and detailed handwork." },
       { q: "Do sarees come with customization options?", a: "Yes, all our sarees include matching blouse pieces. We offer customized blouse stitching and fall/pico finishes upon request." },
       { q: "What is your standard delivery timeline?", a: "Ready-to-ship sarees are dispatched in 2-3 business days. Tailored blouse custom orders take 10-14 days to ship." }
     ]
@@ -113,7 +113,7 @@ const CATEGORY_CONTENT: Record<string, {
 };
 
 const DEFAULT_CATEGORY_CONTENT = {
-  title: "Nakhrali Collection",
+  title: "Rajgharana Collection",
   subtitle: "Curated Traditional & Contemporary Silhouettes",
   description: "Discover our premium edits designed for the modern woman who values heritage craftsmanship, delicate textures, and visual excellence.",
   heroImage: "/extracted_photos/shahi-wedding-set-an-exquisite-blend-of-rich-silk-satin-fabric-detailed-embroidery-work-on-lehenga-choli-reseller-in-surat-1449/page-0.png",
@@ -170,7 +170,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
         <div className="relative text-center px-4 max-w-3xl z-10">
-          <span className="text-nakhrali-gold font-sans text-xs md:text-sm tracking-[0.2em] uppercase block mb-3 font-medium">
+          <span className="text-rajgharana-gold font-sans text-xs md:text-sm tracking-[0.2em] uppercase block mb-3 font-medium">
             {content.subtitle}
           </span>
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif text-white tracking-wide mb-4">
@@ -202,7 +202,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
                 transition={{ delay: i * 0.1 }}
                 className="flex flex-col items-center gap-2 cursor-pointer group"
               >
-                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-nakhrali-gold p-0.5 group-hover:scale-105 transition-transform duration-300">
+                <div className="w-16 h-16 md:w-20 md:h-20 rounded-full border-2 border-rajgharana-gold p-0.5 group-hover:scale-105 transition-transform duration-300">
                   <div className="relative w-full h-full rounded-full overflow-hidden">
                     <Image src={story.img} alt={story.name} fill className="object-cover" />
                   </div>
@@ -219,7 +219,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
         <div className="flex items-center justify-between border-y border-gray-100 py-4 mb-10">
           <button 
             onClick={() => setIsFilterOpen(true)}
-            className="flex items-center gap-2 font-sans text-xs md:text-sm tracking-widest uppercase hover:text-nakhrali-gold transition-colors font-medium"
+            className="flex items-center gap-2 font-sans text-xs md:text-sm tracking-widest uppercase hover:text-rajgharana-gold transition-colors font-medium"
           >
             <SlidersHorizontal size={16} /> Filter
           </button>
@@ -355,7 +355,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
         <div className="w-full py-10 lg:py-20 border-t border-gray-100 mt-10 lg:mt-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col gap-6 pr-0 lg:pr-10">
-              <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-medium">
+              <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-medium">
                 {content.lookbookSubtitle}
               </span>
               <h2 className="text-3xl md:text-[42px] font-serif tracking-wide text-[#111111] leading-tight">
@@ -367,7 +367,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
               <div className="mt-4">
                 <Link 
                   href="/lookbook" 
-                  className="inline-block border-b border-black text-xs tracking-widest uppercase font-medium pb-1.5 hover:text-nakhrali-gold hover:border-nakhrali-gold transition-all"
+                  className="inline-block border-b border-black text-xs tracking-widest uppercase font-medium pb-1.5 hover:text-rajgharana-gold hover:border-rajgharana-gold transition-all"
                 >
                   View Full Lookbook
                 </Link>
@@ -404,14 +404,14 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
         {/* 5. Customer Reviews Section */}
         <div className="w-full py-10 lg:py-16 border-t border-gray-100">
           <div className="text-center mb-12">
-            <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-medium block mb-2">LOVED BY OUR PATRONS</span>
-            <h2 className="text-2xl md:text-3xl font-serif tracking-wide text-[#111111]">She Wore Nakhrali</h2>
+            <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-medium block mb-2">LOVED BY OUR PATRONS</span>
+            <h2 className="text-2xl md:text-3xl font-serif tracking-wide text-[#111111]">She Wore Rajgharana</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {content.reviews.map((rev, idx) => (
               <div key={idx} className="bg-white border border-gray-100 p-8 flex flex-col gap-4 shadow-sm hover:shadow-md transition-shadow">
-                <div className="flex gap-1 text-nakhrali-gold">
+                <div className="flex gap-1 text-rajgharana-gold">
                   {[...Array(rev.rating)].map((_, i) => (
                     <Star key={i} size={16} fill="currentColor" />
                   ))}
@@ -439,7 +439,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
               <div key={idx} className="border-b border-gray-100 pb-4">
                 <button 
                   onClick={() => toggleFaq(idx)}
-                  className="w-full flex items-center justify-between text-left py-2 font-sans font-medium text-sm md:text-base text-[#111111] hover:text-nakhrali-gold transition-colors"
+                  className="w-full flex items-center justify-between text-left py-2 font-sans font-medium text-sm md:text-base text-[#111111] hover:text-rajgharana-gold transition-colors"
                 >
                   <span>{faq.q}</span>
                   <ChevronDown 

@@ -19,7 +19,7 @@ export default function WishlistPage() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 font-sans text-sm tracking-widest uppercase">
-          <Link href="/collections/all" className="w-full sm:w-auto bg-[#111111] text-white px-8 py-4 hover:bg-nakhrali-gold transition-colors">
+          <Link href="/collections/all" className="w-full sm:w-auto bg-[#111111] text-white px-8 py-4 hover:bg-rajgharana-gold transition-colors">
             Start Shopping
           </Link>
           <Link href="/login" className="w-full sm:w-auto border border-gray-200 px-8 py-4 text-[#111111] hover:border-[#111111] transition-colors">

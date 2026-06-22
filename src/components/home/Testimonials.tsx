@@ -17,7 +17,7 @@ const TESTIMONIALS = [
     name: "Aarchi Patel",
     image: "/extracted_photos/navy-stunning-blue-beautiful-colour-in-soft-georgette-fabric-lehenga-choli-wholesale-in-surat-5067-blue/page-0.png",
     rating: 5,
-    text: "Loved the fitting of this lehenga. The quality and finishing is amazing. Truly an authentic piece from Nakhrali.",
+    text: "Loved the fitting of this lehenga. The quality and finishing is amazing. Truly an authentic piece from Rajgharana.",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ export function Testimonials() {
     <div className="w-full bg-[#f9f8f6] py-10 lg:py-16">
       <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif text-center text-[#111111] mb-12">
-          She Wore Nakhrali. The Compliments Followed.
+          She Wore Rajgharana. The Compliments Followed.
         </h2>
 
         <div className="relative group/slider">
@@ -82,7 +82,7 @@ export function Testimonials() {
                   </div>
                   
                   {/* Rating */}
-                  <div className="flex gap-1 mb-3 text-nakhrali-gold">
+                  <div className="flex gap-1 mb-3 text-rajgharana-gold">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star 
                         key={i} 

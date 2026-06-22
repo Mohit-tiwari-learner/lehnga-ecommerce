@@ -34,7 +34,7 @@ export default function TrackOrderPage() {
                 type="text" 
                 placeholder="e.g. NAK12345678"
                 required 
-                className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white" 
+                className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white" 
               />
               <span className="text-[10px] text-gray-400">Find this in your order confirmation email.</span>
             </div>
@@ -44,18 +44,18 @@ export default function TrackOrderPage() {
               <input 
                 type="text" 
                 required 
-                className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white" 
+                className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white" 
               />
             </div>
 
-            <button type="submit" className="flex items-center justify-center gap-2 bg-[#111111] text-white py-4 mt-4 font-medium tracking-widest uppercase hover:bg-nakhrali-gold transition-colors text-sm">
+            <button type="submit" className="flex items-center justify-center gap-2 bg-[#111111] text-white py-4 mt-4 font-medium tracking-widest uppercase hover:bg-rajgharana-gold transition-colors text-sm">
               <Search size={16} /> Track Order
             </button>
           </form>
 
           <div className="mt-8 text-center border-t border-gray-200 pt-8">
             <p className="text-sm text-gray-600 mb-2">Need help with your order?</p>
-            <Link href="/contact" className="text-sm font-medium border-b border-black pb-0.5 hover:text-nakhrali-gold hover:border-nakhrali-gold transition-colors">
+            <Link href="/contact" className="text-sm font-medium border-b border-black pb-0.5 hover:text-rajgharana-gold hover:border-rajgharana-gold transition-colors">
               Contact Support
             </Link>
           </div>

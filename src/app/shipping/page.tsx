@@ -13,7 +13,7 @@ export default function ShippingPolicyPage() {
           <h1 className="text-3xl md:text-4xl font-serif text-[#111111] tracking-wide mb-6">Shipping Policy</h1>
         </div>
         <div className="prose prose-sm md:prose-base max-w-none text-gray-600 leading-relaxed">
-          <p>At Nakhrali, we strive to deliver your beautiful ethnic wear safely and as quickly as possible. Please read our shipping policy carefully.</p>
+          <p>At Rajgharana, we strive to deliver your beautiful ethnic wear safely and as quickly as possible. Please read our shipping policy carefully.</p>
           
           <h3 className="text-xl font-serif text-[#111111] mt-8 mb-4">Domestic Shipping (India)</h3>
           <ul>
@@ -31,7 +31,7 @@ export default function ShippingPolicyPage() {
           </ul>
 
           <h3 className="text-xl font-serif text-[#111111] mt-8 mb-4">Order Tracking</h3>
-          <p>Once your order is shipped, you will receive a confirmation email containing your tracking number and a link to track your package. You can also track your order directly from your Nakhrali account.</p>
+          <p>Once your order is shipped, you will receive a confirmation email containing your tracking number and a link to track your package. You can also track your order directly from your Rajgharana account.</p>
         </div>
       </div>
     </div>

@@ -1,12 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export function SareesByNakhrali() {
+export function SareesByRajgharana() {
   return (
     <div className="w-full bg-white py-10 lg:py-16 px-4 lg:px-8">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         <h2 className="text-xl md:text-2xl font-sans tracking-[0.2em] text-[#111111] mb-12 text-center uppercase">
-          Sarees By Nakhrali
+          Sarees By Rajgharana
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">

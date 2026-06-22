@@ -84,7 +84,7 @@ export default function InventoryManagementPage() {
               placeholder="Search SKU or Product..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="pl-9 pr-4 py-2 border border-gray-200 rounded text-sm w-full md:w-64 focus:outline-none focus:border-nakhrali-gold"
+              className="pl-9 pr-4 py-2 border border-gray-200 rounded text-sm w-full md:w-64 focus:outline-none focus:border-rajgharana-gold"
             />
           </div>
         </div>

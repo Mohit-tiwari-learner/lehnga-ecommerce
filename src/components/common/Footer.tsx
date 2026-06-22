@@ -45,7 +45,7 @@ export function Footer() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const linkClass = "relative w-max text-gray-400 hover:text-white text-sm font-light transition-colors py-0.5 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-nakhrali-gold after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100";
+  const linkClass = "relative w-max text-gray-400 hover:text-white text-sm font-light transition-colors py-0.5 after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:origin-bottom-right after:scale-x-0 after:bg-rajgharana-gold after:transition-transform after:duration-300 hover:after:origin-bottom-left hover:after:scale-x-100";
 
   return (
     <footer className="w-full bg-[#080808] text-white pt-20 pb-8 px-6 md:px-12 border-t border-gray-900 overflow-hidden font-sans relative">
@@ -67,7 +67,7 @@ export function Footer() {
           {/* Column 1: Brand & Contact Info */}
           <div className="lg:col-span-2 flex flex-col gap-6">
             <div className="flex flex-col gap-2">
-              <h3 className="font-serif text-3xl tracking-[0.2em] text-white">NAKHRALI</h3>
+              <h3 className="font-serif text-3xl tracking-[0.2em] text-white">RAJGHARANA</h3>
               <p className="text-gray-500 text-xs font-light tracking-widest uppercase">The Essence of Indian Handloom</p>
             </div>
             
@@ -78,11 +78,11 @@ export function Footer() {
             {/* Live Clock & Coordinates */}
             <div className="flex flex-col gap-3 text-xs tracking-wider uppercase text-gray-500 font-medium">
               <div className="flex items-center gap-2">
-                <MapPin size={14} className="text-nakhrali-gold" />
+                <MapPin size={14} className="text-rajgharana-gold" />
                 <span>Mumbai, IN — 19.0760° N, 72.8777° E</span>
               </div>
               <div className="flex items-center gap-2">
-                <Clock size={14} className="text-nakhrali-gold" />
+                <Clock size={14} className="text-rajgharana-gold" />
                 <span className="flex items-center gap-1.5">
                   Local Time: {mumbaiTime || "Loading..."}
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 inline-block animate-pulse"></span>
@@ -148,7 +148,7 @@ export function Footer() {
                 Receive exclusive invites to private seasonal edits, handloom collection releases, and bespoke styling sessions.
               </p>
               
-              <form onSubmit={handleSubscribe} className="relative mt-2 flex items-center border-b border-gray-800 focus-within:border-nakhrali-gold transition-colors py-2.5">
+              <form onSubmit={handleSubscribe} className="relative mt-2 flex items-center border-b border-gray-800 focus-within:border-rajgharana-gold transition-colors py-2.5">
                 <input 
                   type="email" 
                   required
@@ -160,14 +160,14 @@ export function Footer() {
                 <button 
                   type="submit" 
                   aria-label="Subscribe"
-                  className="absolute right-0 text-gray-500 hover:text-nakhrali-gold transition-colors duration-300"
+                  className="absolute right-0 text-gray-500 hover:text-rajgharana-gold transition-colors duration-300"
                 >
                   <ArrowRight size={16} />
                 </button>
               </form>
               
               {subscribed && (
-                <span className="text-[10px] text-nakhrali-gold tracking-widest uppercase font-semibold mt-1">
+                <span className="text-[10px] text-rajgharana-gold tracking-widest uppercase font-semibold mt-1">
                   Thank you for subscribing
                 </span>
               )}
@@ -208,7 +208,7 @@ export function Footer() {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-6 pt-10 text-xs text-gray-500 font-light tracking-wide">
           
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 text-center">
-            <span>Copyright &copy; {new Date().getFullYear()} Nakhrali. All Rights Reserved.</span>
+            <span>Copyright &copy; {new Date().getFullYear()} Rajgharana. All Rights Reserved.</span>
             <Link href="/terms" className="hover:text-white transition-colors underline-offset-4 hover:underline">Terms of Service</Link>
             <Link href="/privacy" className="hover:text-white transition-colors underline-offset-4 hover:underline">Privacy Policy</Link>
           </div>
@@ -248,13 +248,13 @@ export function Footer() {
         {/* Awwwards Huge Branding Typography Section */}
         <div className="w-full mt-10 pt-4 overflow-hidden select-none border-t border-white/5">
           <h1 
-            className="text-[12vw] font-serif font-black text-center tracking-[0.18em] leading-none transition-all duration-1000 select-none hover:text-nakhrali-gold/15 translate-y-3 cursor-default"
+            className="text-[12vw] font-serif font-black text-center tracking-[0.18em] leading-none transition-all duration-1000 select-none hover:text-rajgharana-gold/15 translate-y-3 cursor-default"
             style={{ 
               WebkitTextStroke: "1px rgba(255, 255, 255, 0.05)", 
               color: "transparent" 
             }}
           >
-            NAKHRALI
+            RAJGHARANA
           </h1>
         </div>
 

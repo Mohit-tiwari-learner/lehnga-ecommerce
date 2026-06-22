@@ -38,12 +38,12 @@ export default function ContactPage() {
 
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center flex-none">
-                <MapPin size={20} className="text-nakhrali-gold" />
+                <MapPin size={20} className="text-rajgharana-gold" />
               </div>
               <div>
                 <h3 className="font-medium text-[#111111] mb-1">Our Store / Headquarters</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  Nakhrali Fashions Pvt. Ltd.<br />
+                  Rajgharana Fashions Pvt. Ltd.<br />
                   123 Fashion Street, Cyber Hub<br />
                   Gurugram, Haryana 122002<br />
                   India
@@ -53,7 +53,7 @@ export default function ContactPage() {
 
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center flex-none">
-                <Phone size={20} className="text-nakhrali-gold" />
+                <Phone size={20} className="text-rajgharana-gold" />
               </div>
               <div>
                 <h3 className="font-medium text-[#111111] mb-1">Phone / WhatsApp</h3>
@@ -66,13 +66,13 @@ export default function ContactPage() {
 
             <div className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center flex-none">
-                <Mail size={20} className="text-nakhrali-gold" />
+                <Mail size={20} className="text-rajgharana-gold" />
               </div>
               <div>
                 <h3 className="font-medium text-[#111111] mb-1">Email</h3>
                 <p className="text-sm text-gray-500 leading-relaxed">
-                  Support: care@nakhrali.com<br />
-                  Wholesale: business@nakhrali.com
+                  Support: care@rajgharana.com<br />
+                  Wholesale: business@rajgharana.com
                 </p>
               </div>
             </div>
@@ -85,30 +85,30 @@ export default function ContactPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-medium text-gray-700 tracking-wider uppercase">First Name *</label>
-                  <input type="text" required className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white" />
+                  <input type="text" required className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white" />
                 </div>
                 <div className="flex flex-col gap-1.5">
                   <label className="text-xs font-medium text-gray-700 tracking-wider uppercase">Last Name *</label>
-                  <input type="text" required className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white" />
+                  <input type="text" required className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white" />
                 </div>
               </div>
               
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-medium text-gray-700 tracking-wider uppercase">Email Address *</label>
-                <input type="email" required className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white" />
+                <input type="email" required className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white" />
               </div>
               
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-medium text-gray-700 tracking-wider uppercase">Phone Number</label>
-                <input type="tel" className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white" />
+                <input type="tel" className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white" />
               </div>
 
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-medium text-gray-700 tracking-wider uppercase">Message *</label>
-                <textarea required rows={5} className="w-full border border-gray-200 p-3 outline-none focus:border-nakhrali-gold transition-colors bg-white resize-none"></textarea>
+                <textarea required rows={5} className="w-full border border-gray-200 p-3 outline-none focus:border-rajgharana-gold transition-colors bg-white resize-none"></textarea>
               </div>
 
-              <button type="submit" className="bg-[#111111] text-white py-4 mt-2 font-medium tracking-widest uppercase hover:bg-nakhrali-gold transition-colors text-sm">
+              <button type="submit" className="bg-[#111111] text-white py-4 mt-2 font-medium tracking-widest uppercase hover:bg-rajgharana-gold transition-colors text-sm">
                 Submit Message
               </button>
             </form>

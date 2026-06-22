@@ -18,7 +18,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Nakhrali - Women's Ethnic Fashion",
+  title: "Rajgharana - Women's Ethnic Fashion",
   description: "Best Indian Women's Ethnic Fashion Brand. Shop traditional and ethnic Indian clothing and accessories.",
 };
 

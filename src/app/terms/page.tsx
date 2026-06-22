@@ -13,7 +13,7 @@ export default function TermsPage() {
           <h1 className="text-3xl md:text-4xl font-serif text-[#111111] tracking-wide mb-6">Terms of Service</h1>
         </div>
         <div className="prose prose-sm md:prose-base max-w-none text-gray-600 leading-relaxed">
-          <p>Welcome to Nakhrali. By accessing or using our website, you agree to be bound by the following Terms of Service. Please read them carefully.</p>
+          <p>Welcome to Rajgharana. By accessing or using our website, you agree to be bound by the following Terms of Service. Please read them carefully.</p>
           
           <h3 className="text-xl font-serif text-[#111111] mt-8 mb-4">1. General Conditions</h3>
           <p>We reserve the right to refuse service to anyone for any reason at any time. You understand that your content (not including credit card information), may be transferred unencrypted and involve transmissions over various networks.</p>

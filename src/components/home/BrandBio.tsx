@@ -13,13 +13,13 @@ export function BrandBio() {
         {/* Brand Bio Section */}
         <div className="mb-16">
           <h2 className="text-xl md:text-2xl font-serif text-[#111111] mb-6">
-            NAKHRALI- Best Indian Women's Ethnic Fashion Brand<br/>
+            RAJGHARANA- Best Indian Women's Ethnic Fashion Brand<br/>
             (Traditional, Ethnic Indian Clothing and Accessories)
           </h2>
           
           <div className="text-sm md:text-base text-gray-600 font-sans leading-relaxed text-justify md:text-center space-y-4">
             <p>
-              Welcome to Nakhrali, where tradition meets contemporary elegance. We are dedicated to bringing you the finest collection of women's ethnic fashion, crafted with meticulous attention to detail and a deep appreciation for India's rich textile heritage. Our designs celebrate the spirit of the modern Indian woman who embraces her roots while stepping confidently into the future.
+              Welcome to Rajgharana, where tradition meets contemporary elegance. We are dedicated to bringing you the finest collection of women's ethnic fashion, crafted with meticulous attention to detail and a deep appreciation for India's rich textile heritage. Our designs celebrate the spirit of the modern Indian woman who embraces her roots while stepping confidently into the future.
             </p>
             
             {isExpanded && (
@@ -28,7 +28,7 @@ export function BrandBio() {
                   From handwoven silk sarees that tell stories of generations of weavers, to chic Indo-western co-ords perfect for the festive season, our catalog is a tribute to versatility. Every piece in our collection goes through rigorous quality checks to ensure you receive not just an outfit, but a work of art.
                 </p>
                 <p>
-                  We believe that fashion should be as unique as you are. That's why we offer personalized styling assistance and fit guidance, ensuring that you find your perfect ensemble for every occasion. Join the Nakhrali family today and redefine your ethnic wardrobe with pieces that are designed to turn heads and create lasting memories.
+                  We believe that fashion should be as unique as you are. That's why we offer personalized styling assistance and fit guidance, ensuring that you find your perfect ensemble for every occasion. Join the Rajgharana family today and redefine your ethnic wardrobe with pieces that are designed to turn heads and create lasting memories.
                 </p>
               </>
             )}
@@ -36,7 +36,7 @@ export function BrandBio() {
           
           <button 
             onClick={() => setIsExpanded(!isExpanded)}
-            className="mt-6 text-nakhrali-gold font-sans text-sm font-semibold tracking-wider uppercase hover:text-black transition-colors"
+            className="mt-6 text-rajgharana-gold font-sans text-sm font-semibold tracking-wider uppercase hover:text-black transition-colors"
           >
             {isExpanded ? "- Read less" : "+ Read more"}
           </button>

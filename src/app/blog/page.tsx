@@ -46,7 +46,7 @@ export default function BlogPage() {
         <div className="flex items-center gap-2 text-xs font-sans text-gray-500 mb-8 tracking-wider justify-center">
           <Link href="/" className="hover:text-black transition-colors">Home</Link>
           <span className="mx-1">/</span>
-          <span className="text-black">The Nakhrali Blog</span>
+          <span className="text-black">The Rajgharana Blog</span>
         </div>
 
         {/* Header */}
@@ -76,13 +76,13 @@ export default function BlogPage() {
                 <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
                 <span>{BLOG_POSTS[0].date}</span>
               </div>
-              <h2 className="text-3xl font-serif text-[#111111] mb-4 group-hover:text-nakhrali-gold transition-colors">
+              <h2 className="text-3xl font-serif text-[#111111] mb-4 group-hover:text-rajgharana-gold transition-colors">
                 {BLOG_POSTS[0].title}
               </h2>
               <p className="text-gray-600 font-sans leading-relaxed mb-6">
                 {BLOG_POSTS[0].excerpt}
               </p>
-              <button className="text-sm font-sans tracking-widest uppercase border-b border-black pb-1 hover:text-nakhrali-gold hover:border-nakhrali-gold transition-colors inline-flex items-center gap-2">
+              <button className="text-sm font-sans tracking-widest uppercase border-b border-black pb-1 hover:text-rajgharana-gold hover:border-rajgharana-gold transition-colors inline-flex items-center gap-2">
                 Read Article <ArrowRight size={14} />
               </button>
             </div>
@@ -106,13 +106,13 @@ export default function BlogPage() {
                 <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
                 <span>{post.date}</span>
               </div>
-              <h3 className="text-xl font-serif text-[#111111] mb-3 group-hover:text-nakhrali-gold transition-colors leading-snug">
+              <h3 className="text-xl font-serif text-[#111111] mb-3 group-hover:text-rajgharana-gold transition-colors leading-snug">
                 {post.title}
               </h3>
               <p className="text-sm text-gray-600 font-sans leading-relaxed mb-4 line-clamp-2">
                 {post.excerpt}
               </p>
-              <button className="text-xs font-sans tracking-widest uppercase border-b border-black pb-1 hover:text-nakhrali-gold hover:border-nakhrali-gold transition-colors">
+              <button className="text-xs font-sans tracking-widest uppercase border-b border-black pb-1 hover:text-rajgharana-gold hover:border-rajgharana-gold transition-colors">
                 Read More
               </button>
             </div>

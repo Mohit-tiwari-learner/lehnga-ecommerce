@@ -61,14 +61,14 @@ export function ProductCard({ product }: { product: Product }) {
       </div>
 
       <div className="flex flex-col flex-1">
-        <Link href={`/product/${product.id}`} className="hover:text-nakhrali-gold transition-colors">
+        <Link href={`/product/${product.id}`} className="hover:text-rajgharana-gold transition-colors">
           <h3 className="text-[12px] md:text-[14px] text-gray-600 leading-relaxed line-clamp-2 min-h-[42px] mb-2">
             {product.title}
           </h3>
         </Link>
         
         {product.rating && (
-          <div className="flex items-center gap-1 mb-2 text-nakhrali-gold">
+          <div className="flex items-center gap-1 mb-2 text-rajgharana-gold">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star key={i} size={12} fill={i < Math.floor(product.rating!) ? "currentColor" : "none"} />
             ))}

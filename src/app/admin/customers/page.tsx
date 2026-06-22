@@ -28,7 +28,7 @@ export default function CustomersPage() {
                 <td className="px-6 py-4 font-mono text-xs font-semibold text-gray-400">{c.id}</td>
                 <td className="px-6 py-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 rounded-full bg-nakhrali-gold/10 text-nakhrali-gold flex items-center justify-center font-bold text-sm shrink-0 animate-pulse">
+                    <div className="w-9 h-9 rounded-full bg-rajgharana-gold/10 text-rajgharana-gold flex items-center justify-center font-bold text-sm shrink-0 animate-pulse">
                       {c.name.split(" ").map(n => n[0]).join("")}
                     </div>
                     <div className="flex flex-col">
@@ -39,7 +39,7 @@ export default function CustomersPage() {
                 </td>
                 <td className="px-6 py-4 text-gray-500 font-medium">{c.city}</td>
                 <td className="px-6 py-4 font-semibold text-gray-800">{c.orders} orders</td>
-                <td className="px-6 py-4 font-semibold text-nakhrali-gold">₹ {c.spent.toLocaleString("en-IN")}</td>
+                <td className="px-6 py-4 font-semibold text-rajgharana-gold">₹ {c.spent.toLocaleString("en-IN")}</td>
               </tr>
             ))}
           </tbody>

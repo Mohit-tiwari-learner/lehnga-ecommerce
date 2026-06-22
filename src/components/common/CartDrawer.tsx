@@ -42,7 +42,7 @@ export function CartDrawer() {
             <p className="text-gray-500 text-sm mb-8">Looks like you haven't added anything to your cart yet.</p>
             <button 
               onClick={() => setIsCartOpen(false)}
-              className="bg-[#111111] text-white px-8 py-4 font-sans tracking-widest text-sm uppercase hover:bg-nakhrali-gold transition-colors"
+              className="bg-[#111111] text-white px-8 py-4 font-sans tracking-widest text-sm uppercase hover:bg-rajgharana-gold transition-colors"
             >
               Continue Shopping
             </button>
@@ -91,7 +91,7 @@ export function CartDrawer() {
               <p className="text-xs text-gray-500 mb-6 font-sans">Tax included. Shipping calculated at checkout.</p>
               
               <Link href="/checkout" onClick={() => setIsCartOpen(false)}>
-                <button className="w-full bg-[#111111] text-white py-4 font-sans tracking-widest text-sm uppercase hover:bg-nakhrali-gold transition-colors">
+                <button className="w-full bg-[#111111] text-white py-4 font-sans tracking-widest text-sm uppercase hover:bg-rajgharana-gold transition-colors">
                   Check Out
                 </button>
               </Link>

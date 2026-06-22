@@ -26,7 +26,7 @@ const REVIEWS = [
     date: "April 05, 2026",
     rating: 4,
     title: "Elegant and Comfortable",
-    content: "I love my Banarasi Saree from Nakhrali. The weaving is authentic and lightweight enough to wear for long hours. Only giving 4 stars because the delivery took a day longer than expected, but the product is 10/10.",
+    content: "I love my Banarasi Saree from Rajgharana. The weaving is authentic and lightweight enough to wear for long hours. Only giving 4 stars because the delivery took a day longer than expected, but the product is 10/10.",
     product: "Banarasi Georgette Saree"
   },
   {
@@ -35,7 +35,7 @@ const REVIEWS = [
     date: "March 18, 2026",
     rating: 5,
     title: "Perfect Bridal Outfit",
-    content: "Nakhrali made my dream bridal lehenga a reality. The zardozi work is so intricate and traditional, yet the silhouette feels very modern. Thank you for making my big day so special!",
+    content: "Rajgharana made my dream bridal lehenga a reality. The zardozi work is so intricate and traditional, yet the silhouette feels very modern. Thank you for making my big day so special!",
     product: "Custom Bridal Lehenga"
   },
   {
@@ -53,7 +53,7 @@ const REVIEWS = [
     date: "January 15, 2026",
     rating: 5,
     title: "My Go-To for Festive Wear",
-    content: "This is my third purchase from Nakhrali and they never disappoint. The Anarkali suit fits like a dream and the colors are exactly as shown in the pictures.",
+    content: "This is my third purchase from Rajgharana and they never disappoint. The Anarkali suit fits like a dream and the colors are exactly as shown in the pictures.",
     product: "Embroidered Anarkali Kurta Set"
   }
 ];
@@ -73,17 +73,17 @@ export default function TestimonialsPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-serif text-[#111111] tracking-wide mb-6">
-            She Wore Nakhrali.
+            She Wore Rajgharana.
           </h1>
           <p className="text-gray-500 font-sans max-w-lg mx-auto">
-            Read what our beautiful community has to say about their Nakhrali outfits.
+            Read what our beautiful community has to say about their Rajgharana outfits.
           </p>
         </div>
 
         {/* Summary Stats */}
         <div className="flex flex-col items-center justify-center mb-16 pb-16 border-b border-gray-100">
           <div className="text-5xl font-serif text-[#111111] mb-2">4.9/5</div>
-          <div className="flex items-center gap-1 text-nakhrali-gold mb-3">
+          <div className="flex items-center gap-1 text-rajgharana-gold mb-3">
             {[1, 2, 3, 4, 5].map((star) => (
               <Star key={star} size={20} fill="currentColor" />
             ))}
@@ -96,7 +96,7 @@ export default function TestimonialsPage() {
           {REVIEWS.map((review) => (
             <div key={review.id} className="bg-gray-50 p-8 font-sans">
               <div className="flex items-center justify-between mb-4">
-                <div className="flex items-center gap-1 text-nakhrali-gold">
+                <div className="flex items-center gap-1 text-rajgharana-gold">
                   {[...Array(5)].map((_, i) => (
                     <Star key={i} size={14} fill={i < review.rating ? "currentColor" : "none"} stroke={i < review.rating ? "currentColor" : "#cbd5e1"} />
                   ))}
@@ -109,7 +109,7 @@ export default function TestimonialsPage() {
               </p>
               <div className="flex flex-col gap-1 border-t border-gray-200 pt-4 mt-auto">
                 <span className="font-medium text-xs tracking-wider uppercase text-[#111111]">{review.name}</span>
-                <span className="text-xs text-gray-500">Purchased: <Link href="#" className="underline hover:text-nakhrali-gold">{review.product}</Link></span>
+                <span className="text-xs text-gray-500">Purchased: <Link href="#" className="underline hover:text-rajgharana-gold">{review.product}</Link></span>
               </div>
             </div>
           ))}

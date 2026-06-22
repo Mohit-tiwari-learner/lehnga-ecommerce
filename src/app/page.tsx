@@ -1,6 +1,6 @@
 import { ReelsSlider } from "@/components/home/ReelsSlider";
 import { USPBadges } from "@/components/home/USPBadges";
-import { SareesByNakhrali } from "@/components/home/SareesByNakhrali";
+import { SareesByRajgharana } from "@/components/home/SareesByRajgharana";
 import { SignatureSarees } from "@/components/home/SignatureSarees";
 import { PartyCrashers } from "@/components/home/PartyCrashers";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
@@ -24,7 +24,7 @@ export default function Home() {
     <div className="w-full flex flex-col">
       <ReelsSlider />
       <USPBadges />
-      <SareesByNakhrali />
+      <SareesByRajgharana />
       <SignatureSarees />
       <PartyCrashers />
       <CategoryGrid />

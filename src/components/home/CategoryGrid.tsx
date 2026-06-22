@@ -32,7 +32,7 @@ export function CategoryGrid() {
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
               </div>
-              <h3 className="font-sans text-sm md:text-base font-medium tracking-wide text-center text-[#111111] group-hover:text-nakhrali-gold transition-colors">
+              <h3 className="font-sans text-sm md:text-base font-medium tracking-wide text-center text-[#111111] group-hover:text-rajgharana-gold transition-colors">
                 {category.title}
               </h3>
             </Link>

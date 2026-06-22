@@ -53,7 +53,7 @@ const CRAFT_DETAILS: Record<string, {
 const DEFAULT_CRAFT_DETAILS = {
   technique: "Artisanal Hand-Tailored Heritage",
   techniqueDesc: "Made with precise craftsmanship and premium fabrics. Tailored using double-stitched seams and finished with delicate custom details.",
-  artisanName: "Nakhrali Tailoring Guild",
+  artisanName: "Rajgharana Tailoring Guild",
   artisanDesc: "Meticulously designed and checked by our local production unit, supporting ethical labor standards and small artisan businesses.",
   imageLeft: "/extracted_photos/soft-naysha-silk-fancy-fabric-with-embroidery-work-on-this-lehenga-collection-reseller-in-surat-1489/page-0.png",
   imageRight: "/extracted_photos/taddy-silk-fancy-and-beautiful-fabric-best-for-you-lehenga-choli-collections-supplier-in-surat-ka-5072/page-0.png",
@@ -90,7 +90,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
     return {
       product: {
         id: resolvedParams.id,
-        title: "Signature Nakhrali Handloom Outfit",
+        title: "Signature Rajgharana Handloom Outfit",
         price: 18995,
         image: "/extracted_photos/heavy-sparkling-and-beautiful-wine-colour-georgette-fancy-fabric-lehenga-choli-reseller-in-surat-5067-wine/page-0.png",
         shipsInDays: 4,
@@ -169,7 +169,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   key={idx}
                   onClick={() => setActiveImage(idx)}
                   className={`relative w-20 md:w-full aspect-[3/4] border-2 transition-all rounded overflow-hidden shadow-sm shrink-0 snap-start flex-none
-                    ${activeImage === idx ? 'border-nakhrali-gold scale-102 shadow-md' : 'border-transparent opacity-80 hover:opacity-100'}`}
+                    ${activeImage === idx ? 'border-rajgharana-gold scale-102 shadow-md' : 'border-transparent opacity-80 hover:opacity-100'}`}
                 >
                   <div className="relative w-full h-full">
                     <Image src={img} alt={`Gallery Thumbnail ${idx}`} fill className="object-cover" />
@@ -200,7 +200,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
           <div className="flex-1 flex flex-col">
             <div className="flex justify-between items-start mb-3">
               <div>
-                <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-1">
+                <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-1">
                   {formattedCategoryName}
                 </span>
                 <h1 className="text-3xl lg:text-4xl font-serif text-[#111111] leading-tight tracking-wide">{product.title}</h1>
@@ -211,9 +211,9 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
             </div>
             
             <div className="flex items-center gap-2 mb-6">
-              <p className="text-2xl lg:text-3xl text-nakhrali-gold font-sans font-medium">₹ {product.price.toLocaleString("en-IN")}</p>
+              <p className="text-2xl lg:text-3xl text-rajgharana-gold font-sans font-medium">₹ {product.price.toLocaleString("en-IN")}</p>
               {product.badge && (
-                <span className="bg-nakhrali-gold/10 text-nakhrali-gold text-[10px] tracking-widest font-sans uppercase font-bold px-2.5 py-1 rounded">
+                <span className="bg-rajgharana-gold/10 text-rajgharana-gold text-[10px] tracking-widest font-sans uppercase font-bold px-2.5 py-1 rounded">
                   {product.badge}
                 </span>
               )}
@@ -258,7 +258,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
               
               <button 
                 onClick={handleAddToCart}
-                className="flex-1 bg-[#111111] text-white h-13 font-sans uppercase tracking-widest text-xs font-semibold hover:bg-nakhrali-gold transition-colors flex items-center justify-center gap-2 rounded shadow-md"
+                className="flex-1 bg-[#111111] text-white h-13 font-sans uppercase tracking-widest text-xs font-semibold hover:bg-rajgharana-gold transition-colors flex items-center justify-center gap-2 rounded shadow-md"
               >
                 <ShoppingCart size={16} />
                 <span>Add to Cart</span>
@@ -268,15 +268,15 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
             {/* Value Indicators Row */}
             <div className="grid grid-cols-3 gap-2 mb-10 py-5 border-y border-gray-150 text-center bg-gray-50/50 rounded">
               <div className="flex flex-col items-center gap-1.5 px-2">
-                <Truck size={22} className="text-nakhrali-gold" strokeWidth={1.5} />
+                <Truck size={22} className="text-rajgharana-gold" strokeWidth={1.5} />
                 <span className="font-sans text-[10px] tracking-wider uppercase font-semibold text-gray-700">Free India Shipping</span>
               </div>
               <div className="flex flex-col items-center gap-1.5 px-2 border-x border-gray-200">
-                <RotateCcw size={22} className="text-nakhrali-gold" strokeWidth={1.5} />
+                <RotateCcw size={22} className="text-rajgharana-gold" strokeWidth={1.5} />
                 <span className="font-sans text-[10px] tracking-wider uppercase font-semibold text-gray-700">7-Day Easy Returns</span>
               </div>
               <div className="flex flex-col items-center gap-1.5 px-2">
-                <ShieldCheck size={22} className="text-nakhrali-gold" strokeWidth={1.5} />
+                <ShieldCheck size={22} className="text-rajgharana-gold" strokeWidth={1.5} />
                 <span className="font-sans text-[10px] tracking-wider uppercase font-semibold text-gray-700">Artisan Authenticity</span>
               </div>
             </div>
@@ -321,7 +321,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         {/* 1. Craftsmanship Showcase */}
         <div className="w-full py-10 lg:py-20 border-t border-gray-150 mt-16">
           <div className="text-center max-w-2xl mx-auto mb-14">
-            <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-2">BEHIND THE CREATION</span>
+            <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-2">BEHIND THE CREATION</span>
             <h2 className="text-3xl font-serif text-[#111111] tracking-wide">Heritage Craftsmanship</h2>
           </div>
           
@@ -329,7 +329,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
             <div className="relative aspect-[4/3] rounded overflow-hidden bg-gray-50 shadow-sm order-last lg:order-first">
               <Image src={craft.imageLeft} alt="Craft weaving process" fill className="object-cover" />
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm p-3 rounded shadow max-w-xs border border-gray-100">
-                <p className="font-sans text-[10px] tracking-widest uppercase font-bold text-nakhrali-gold mb-1">Weaving Method</p>
+                <p className="font-sans text-[10px] tracking-widest uppercase font-bold text-rajgharana-gold mb-1">Weaving Method</p>
                 <p className="font-sans text-xs text-gray-800 font-medium">{craft.technique}</p>
               </div>
             </div>
@@ -338,7 +338,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
               <p className="font-sans text-sm text-gray-600 leading-relaxed font-light">{craft.techniqueDesc}</p>
               <div className="bg-gray-50 p-6 rounded border border-gray-100">
                 <div className="flex items-center gap-2 mb-2">
-                  <Sparkles size={16} className="text-nakhrali-gold animate-pulse" />
+                  <Sparkles size={16} className="text-rajgharana-gold animate-pulse" />
                   <span className="font-sans text-xs font-semibold uppercase tracking-wider text-gray-800">Artisan Spotlight</span>
                 </div>
                 <h4 className="font-serif text-base text-black mb-1">{craft.artisanName}</h4>
@@ -362,7 +362,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         <div className="w-full py-10 lg:py-16 border-t border-gray-100 bg-[#fbfbfa] -mx-4 lg:-mx-8 px-4 lg:px-8 mt-6">
           <div className="max-w-[1440px] mx-auto">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-2">CURATED PAIRINGS</span>
+              <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-2">CURATED PAIRINGS</span>
               <h2 className="text-2xl md:text-3xl font-serif text-[#111111] tracking-wide">Complete The Look</h2>
             </div>
             
@@ -375,7 +375,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   <div className="flex-1 font-sans">
                     <h4 className="text-sm font-semibold text-[#111111] line-clamp-1">{acc.name}</h4>
                     <p className="text-xs text-gray-400 mb-3 font-light">Stylist Pick</p>
-                    <p className="text-sm text-nakhrali-gold font-medium mb-1">₹ {acc.price.toLocaleString("en-IN")}</p>
+                    <p className="text-sm text-rajgharana-gold font-medium mb-1">₹ {acc.price.toLocaleString("en-IN")}</p>
                   </div>
                   <button 
                     onClick={() => handleAddAccessory(acc)}
@@ -394,12 +394,12 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         <div className="w-full py-10 lg:py-20 border-t border-gray-100">
           <div className="flex items-center justify-between mb-12">
             <div>
-              <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-1">RECOMMENDED EDITS</span>
+              <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-1">RECOMMENDED EDITS</span>
               <h2 className="text-2xl md:text-3xl font-serif text-[#111111]">You May Also Like</h2>
             </div>
             <Link 
               href={`/collections/${category}`}
-              className="font-sans text-xs tracking-widest uppercase font-semibold border-b border-black pb-1 hover:text-nakhrali-gold hover:border-nakhrali-gold transition-colors"
+              className="font-sans text-xs tracking-widest uppercase font-semibold border-b border-black pb-1 hover:text-rajgharana-gold hover:border-rajgharana-gold transition-colors"
             >
               See All
             </Link>
@@ -416,7 +416,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         <div className="w-full bg-[#f9f8f6] py-12 px-6 md:px-12 rounded flex flex-col md:flex-row items-center justify-between gap-6 mb-12 border border-gray-150 shadow-sm">
           <div className="flex flex-col gap-2">
             <h3 className="font-serif text-2xl text-[#111111] tracking-wide flex items-center gap-2">
-              <HelpCircle size={22} className="text-nakhrali-gold shrink-0" />
+              <HelpCircle size={22} className="text-rajgharana-gold shrink-0" />
               <span>Questions about Fabric or Custom Sizing?</span>
             </h3>
             <p className="font-sans text-sm text-gray-600 font-light">Connect directly with our custom stitching team on WhatsApp. Get fabric close-ups and sizing guides.</p>
@@ -435,13 +435,13 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         {/* 5. Customer Reviews */}
         <div className="w-full py-10 lg:py-12 border-t border-gray-100">
           <div className="text-center max-w-xl mx-auto mb-12">
-            <span className="text-nakhrali-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-2">VERIFIED REVIEWS</span>
+            <span className="text-rajgharana-gold font-sans text-xs tracking-widest uppercase font-semibold block mb-2">VERIFIED REVIEWS</span>
             <h2 className="text-2xl md:text-3xl font-serif text-[#111111]">Patron Experiences</h2>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white border border-gray-100 p-6 rounded shadow-sm hover:shadow transition-shadow">
-              <div className="flex gap-1 text-nakhrali-gold mb-3">
+              <div className="flex gap-1 text-rajgharana-gold mb-3">
                 <Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" />
               </div>
               <p className="font-sans text-gray-600 text-xs md:text-sm italic leading-relaxed mb-4">
@@ -453,7 +453,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
               </div>
             </div>
             <div className="bg-white border border-gray-100 p-6 rounded shadow-sm hover:shadow transition-shadow">
-              <div className="flex gap-1 text-nakhrali-gold mb-3">
+              <div className="flex gap-1 text-rajgharana-gold mb-3">
                 <Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" />
               </div>
               <p className="font-sans text-gray-600 text-xs md:text-sm italic leading-relaxed mb-4">
@@ -465,7 +465,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
               </div>
             </div>
             <div className="bg-white border border-gray-100 p-6 rounded shadow-sm hover:shadow transition-shadow">
-              <div className="flex gap-1 text-nakhrali-gold mb-3">
+              <div className="flex gap-1 text-rajgharana-gold mb-3">
                 <Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" /><Star size={14} fill="currentColor" />
               </div>
               <p className="font-sans text-gray-600 text-xs md:text-sm italic leading-relaxed mb-4">

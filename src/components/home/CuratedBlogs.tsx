@@ -60,7 +60,7 @@ export function CuratedBlogs() {
                 <span className="text-xs text-gray-500 font-sans tracking-widest uppercase mb-2">
                   {blog.date}
                 </span>
-                <h3 className="text-lg font-serif text-[#111111] mb-3 group-hover:text-nakhrali-gold transition-colors">
+                <h3 className="text-lg font-serif text-[#111111] mb-3 group-hover:text-rajgharana-gold transition-colors">
                   {blog.title}
                 </h3>
                 <p className="text-sm text-gray-600 font-sans line-clamp-3 mb-4 flex-1">
@@ -68,7 +68,7 @@ export function CuratedBlogs() {
                 </p>
                 
                 {/* Read More Link */}
-                <div className="flex items-center gap-2 text-sm font-sans font-medium text-[#111111] group-hover:text-nakhrali-gold transition-colors mt-auto">
+                <div className="flex items-center gap-2 text-sm font-sans font-medium text-[#111111] group-hover:text-rajgharana-gold transition-colors mt-auto">
                   Read More <ArrowRight size={16} />
                 </div>
               </div>

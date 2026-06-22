@@ -32,7 +32,7 @@ export default function SettingsPage() {
           <label className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Storefront Title</label>
           <input 
             type="text" 
-            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-nakhrali-gold bg-white"
+            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-rajgharana-gold bg-white"
             value={storeName}
             onChange={(e) => setStoreName(e.target.value)}
           />
@@ -42,7 +42,7 @@ export default function SettingsPage() {
           <label className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Support Contact Email</label>
           <input 
             type="email" 
-            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-nakhrali-gold bg-white"
+            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-rajgharana-gold bg-white"
             value={contactEmail}
             onChange={(e) => setContactEmail(e.target.value)}
           />
@@ -51,7 +51,7 @@ export default function SettingsPage() {
         <div className="flex flex-col gap-2">
           <label className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Default Currency</label>
           <select 
-            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-nakhrali-gold bg-white"
+            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-rajgharana-gold bg-white"
             value={currency}
             onChange={(e) => setCurrency(e.target.value)}
           >
@@ -66,7 +66,7 @@ export default function SettingsPage() {
           <label className="text-xs font-semibold text-gray-600 uppercase tracking-wider">Free Shipping Threshold (INR)</label>
           <input 
             type="number" 
-            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-nakhrali-gold bg-white"
+            className="border border-gray-300 rounded p-3 text-sm outline-none focus:border-rajgharana-gold bg-white"
             value={freeShippingThreshold}
             onChange={(e) => setFreeShippingThreshold(e.target.value)}
           />
@@ -83,7 +83,7 @@ export default function SettingsPage() {
 
       <button 
         type="submit"
-        className="bg-[#111111] hover:bg-nakhrali-gold text-white py-3 rounded font-sans tracking-widest text-xs uppercase font-semibold transition-colors mt-4 self-start px-8 shadow-md"
+        className="bg-[#111111] hover:bg-rajgharana-gold text-white py-3 rounded font-sans tracking-widest text-xs uppercase font-semibold transition-colors mt-4 self-start px-8 shadow-md"
       >
         Save Global Configurations
       </button>

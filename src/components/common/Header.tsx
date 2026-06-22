@@ -61,28 +61,28 @@ export function Header() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-[url('https://cdn.shopify.com/s/files/1/0550/5669/5469/files/Nakhrali_logo_1.png?v=1661338600')] bg-contain bg-center bg-no-repeat rounded-full border border-gray-200 flex items-center justify-center text-[10px]">
+          <div className="w-10 h-10 bg-[url('https://cdn.shopify.com/s/files/1/0550/5669/5469/files/Rajgharana_logo_1.png?v=1661338600')] bg-contain bg-center bg-no-repeat rounded-full border border-gray-200 flex items-center justify-center text-[10px]">
             {/* Fallback mandala/flower icon if image fails */}
-            <span className="sr-only">Nakhrali Logo</span>
+            <span className="sr-only">Rajgharana Logo</span>
           </div>
           <span className="font-serif text-2xl tracking-widest text-[#111111]">
-            NAKHRALI
+            RAJGHARANA
           </span>
         </Link>
 
         {/* Icons */}
         <div className="flex items-center gap-4 lg:gap-6 text-[#111111]">
-          <button className="hover:text-nakhrali-gold transition-colors hidden sm:block">
+          <button className="hover:text-rajgharana-gold transition-colors hidden sm:block">
             <Search size={22} strokeWidth={1.5} />
           </button>
-          <Link href="/wishlist" className="hover:text-nakhrali-gold transition-colors hidden sm:block">
+          <Link href="/wishlist" className="hover:text-rajgharana-gold transition-colors hidden sm:block">
             <Heart size={22} strokeWidth={1.5} />
           </Link>
-          <Link href="#" className="hover:text-nakhrali-gold transition-colors hidden sm:block">
+          <Link href="#" className="hover:text-rajgharana-gold transition-colors hidden sm:block">
             <User size={22} strokeWidth={1.5} />
           </Link>
           <button 
-            className="hover:text-nakhrali-gold transition-colors relative"
+            className="hover:text-rajgharana-gold transition-colors relative"
             onClick={() => setIsCartOpen(true)}
             aria-label="Open Cart"
           >
@@ -91,7 +91,7 @@ export function Header() {
               <motion.span 
                 initial={{ scale: 0 }} 
                 animate={{ scale: 1 }}
-                className="absolute -top-1 -right-2 bg-nakhrali-gold text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-sans font-bold"
+                className="absolute -top-1 -right-2 bg-rajgharana-gold text-white text-[10px] w-4 h-4 flex items-center justify-center rounded-full font-sans font-bold"
               >
                 {cartCount}
               </motion.span>
@@ -106,7 +106,7 @@ export function Header() {
           <div key={link.name} className="relative group cursor-pointer">
             <Link 
               href={link.name === "BLOG" ? "/blog" : `/collections/${link.name.toLowerCase().replace(/ & /g, '-').replace(/\s+/g, "-")}`}
-              className="flex items-center gap-1 text-[11px] font-medium tracking-widest text-[#111111] hover:text-nakhrali-gold transition-colors py-2"
+              className="flex items-center gap-1 text-[11px] font-medium tracking-widest text-[#111111] hover:text-rajgharana-gold transition-colors py-2"
               suppressHydrationWarning
             >
               {link.name}
@@ -120,7 +120,7 @@ export function Header() {
                   <Link
                     key={item}
                     href={`/collections/${item.toLowerCase().replace(/\s+/g, "-")}`}
-                    className="block px-5 py-3.5 text-[12px] text-gray-700 hover:bg-gray-50 hover:text-nakhrali-gold border-b border-gray-50 last:border-0 transition-colors"
+                    className="block px-5 py-3.5 text-[12px] text-gray-700 hover:bg-gray-50 hover:text-rajgharana-gold border-b border-gray-50 last:border-0 transition-colors"
                   >
                     {item}
                   </Link>
@@ -195,7 +195,7 @@ export function Header() {
                             size={16} 
                             className={cn(
                               "transition-transform duration-300", 
-                              openDropdown === link.name ? "rotate-180 text-nakhrali-gold" : ""
+                              openDropdown === link.name ? "rotate-180 text-rajgharana-gold" : ""
                             )} 
                           />
                         </button>
@@ -218,7 +218,7 @@ export function Header() {
                                 key={item} 
                                 href={`/collections/${item.toLowerCase().replace(/\s+/g, "-")}`}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-xs font-sans text-gray-600 py-3 pl-4 border-l-2 border-transparent hover:border-nakhrali-gold hover:text-nakhrali-gold transition-colors"
+                                className="text-xs font-sans text-gray-600 py-3 pl-4 border-l-2 border-transparent hover:border-rajgharana-gold hover:text-rajgharana-gold transition-colors"
                               >
                                 {item}
                               </Link>
@@ -227,7 +227,7 @@ export function Header() {
                             <Link 
                               href={`/collections/${link.name.toLowerCase().replace(/ & /g, '-').replace(/\s+/g, "-")}`}
                               onClick={() => setIsMobileMenuOpen(false)}
-                              className="text-xs font-sans font-medium text-nakhrali-gold py-3 pl-4 underline underline-offset-4"
+                              className="text-xs font-sans font-medium text-rajgharana-gold py-3 pl-4 underline underline-offset-4"
                             >
                               View All {link.name}
                             </Link>
@@ -242,14 +242,14 @@ export function Header() {
               {/* Mobile Menu Footer */}
               <div className="p-6 bg-[#111111] text-white mt-auto">
                 <div className="flex gap-6 mb-6 text-sm font-sans font-light">
-                  <Link href="/track-order" className="hover:text-nakhrali-gold transition-colors">Track Order</Link>
-                  <Link href="/faq" className="hover:text-nakhrali-gold transition-colors">Help / FAQ</Link>
+                  <Link href="/track-order" className="hover:text-rajgharana-gold transition-colors">Track Order</Link>
+                  <Link href="/faq" className="hover:text-rajgharana-gold transition-colors">Help / FAQ</Link>
                 </div>
                 <div className="flex items-center gap-6">
-                  <button className="hover:text-nakhrali-gold transition-colors flex items-center gap-2">
+                  <button className="hover:text-rajgharana-gold transition-colors flex items-center gap-2">
                     <Search size={18} /> <span className="text-xs">Search</span>
                   </button>
-                  <Link href="/wishlist" className="hover:text-nakhrali-gold transition-colors flex items-center gap-2">
+                  <Link href="/wishlist" className="hover:text-rajgharana-gold transition-colors flex items-center gap-2">
                     <Heart size={18} /> <span className="text-xs">Wishlist</span>
                   </Link>
                 </div>

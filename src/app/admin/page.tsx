@@ -26,7 +26,7 @@ export default function OverviewPage() {
       
       {/* Analytics Stat Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-nakhrali-gold transition-colors">
+        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-rajgharana-gold transition-colors">
           <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider">Gross Revenue</span>
           <span className="text-3xl font-semibold text-[#111111]">₹ {totalRevenue.toLocaleString("en-IN")}</span>
           <div className="flex items-center gap-1.5 text-emerald-600 text-xs font-medium mt-1">
@@ -35,7 +35,7 @@ export default function OverviewPage() {
           </div>
           <div className="absolute right-4 top-4 p-2 bg-emerald-50 rounded text-emerald-600"><DollarSign size={18} /></div>
         </div>
-        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-nakhrali-gold transition-colors">
+        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-rajgharana-gold transition-colors">
           <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider">Orders Received</span>
           <span className="text-3xl font-semibold text-[#111111]">{totalOrders}</span>
           <div className="flex items-center gap-1.5 text-emerald-600 text-xs font-medium mt-1">
@@ -44,7 +44,7 @@ export default function OverviewPage() {
           </div>
           <div className="absolute right-4 top-4 p-2 bg-blue-50 rounded text-blue-600"><ShoppingBag size={18} /></div>
         </div>
-        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-nakhrali-gold transition-colors">
+        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-rajgharana-gold transition-colors">
           <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider">Conversion Rate</span>
           <span className="text-3xl font-semibold text-[#111111]">3.42%</span>
           <div className="flex items-center gap-1.5 text-rose-600 text-xs font-medium mt-1">
@@ -53,7 +53,7 @@ export default function OverviewPage() {
           </div>
           <div className="absolute right-4 top-4 p-2 bg-rose-50 rounded text-rose-600"><TrendingUp size={18} className="rotate-180" /></div>
         </div>
-        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-nakhrali-gold transition-colors">
+        <div className="bg-white border border-gray-200 p-6 rounded shadow-sm flex flex-col gap-2 relative overflow-hidden group hover:border-rajgharana-gold transition-colors">
           <span className="text-gray-400 text-xs font-semibold uppercase tracking-wider">Active Customers</span>
           <span className="text-3xl font-semibold text-[#111111]">{totalCustomers}</span>
           <div className="flex items-center gap-1.5 text-emerald-600 text-xs font-medium mt-1">

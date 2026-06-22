@@ -30,7 +30,7 @@ export default function GalleryPage() {
             Real Brides & Muses
           </h1>
           <p className="text-gray-500 font-sans max-w-lg mx-auto">
-            Discover how women around the world are styling their Nakhrali ensembles.
+            Discover how women around the world are styling their Rajgharana ensembles.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function GalleryPage() {
         </div>
 
         <div className="mt-16 text-center">
-          <Link href="/collections/all" className="inline-block bg-[#111111] text-white px-10 py-4 font-sans uppercase tracking-widest text-sm hover:bg-nakhrali-gold transition-colors">
+          <Link href="/collections/all" className="inline-block bg-[#111111] text-white px-10 py-4 font-sans uppercase tracking-widest text-sm hover:bg-rajgharana-gold transition-colors">
             Shop The Looks
           </Link>
         </div>

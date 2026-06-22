@@ -52,7 +52,7 @@ export default function ProductsPage() {
         <h2 className="text-xl font-serif text-[#111111]">Product Directory</h2>
         <button 
           onClick={() => setShowAddForm(!showAddForm)}
-          className="flex items-center gap-2 bg-[#111111] hover:bg-nakhrali-gold text-white px-4 py-2 text-xs font-sans font-semibold uppercase tracking-widest transition-colors rounded shadow-sm"
+          className="flex items-center gap-2 bg-[#111111] hover:bg-rajgharana-gold text-white px-4 py-2 text-xs font-sans font-semibold uppercase tracking-widest transition-colors rounded shadow-sm"
         >
           {showAddForm ? <X size={14} /> : <Plus size={14} />}
           <span>{showAddForm ? "Cancel Form" : "Add Product"}</span>
@@ -70,7 +70,7 @@ export default function ProductsPage() {
                 type="text" 
                 required
                 placeholder="e.g. Riva Maroon Lehenga Set"
-                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-nakhrali-gold"
+                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-rajgharana-gold"
                 value={newTitle}
                 onChange={(e) => setNewTitle(e.target.value)}
               />
@@ -78,7 +78,7 @@ export default function ProductsPage() {
             <div className="flex flex-col gap-1.5">
               <label className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">Category *</label>
               <select 
-                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-nakhrali-gold"
+                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-rajgharana-gold"
                 value={newCategory}
                 onChange={(e) => setNewCategory(e.target.value)}
               >
@@ -94,7 +94,7 @@ export default function ProductsPage() {
                 type="number" 
                 required
                 placeholder="e.g. 18895"
-                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-nakhrali-gold"
+                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-rajgharana-gold"
                 value={newPrice}
                 onChange={(e) => setNewPrice(e.target.value)}
               />
@@ -105,7 +105,7 @@ export default function ProductsPage() {
                 type="number" 
                 required
                 placeholder="e.g. 15"
-                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-nakhrali-gold"
+                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-rajgharana-gold"
                 value={newStock}
                 onChange={(e) => setNewStock(e.target.value)}
               />
@@ -115,7 +115,7 @@ export default function ProductsPage() {
               <input 
                 type="text"
                 placeholder="/extracted_photos/navy-stunning-blue-beautiful-colour-in-soft-georgette-fabric-lehenga-choli-wholesale-in-surat-5067-blue/page-0.png"
-                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-nakhrali-gold"
+                className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-rajgharana-gold"
                 value={newImage}
                 onChange={(e) => setNewImage(e.target.value)}
               />
@@ -123,7 +123,7 @@ export default function ProductsPage() {
           </div>
           <button 
             type="submit"
-            className="bg-[#111111] hover:bg-nakhrali-gold text-white py-3 rounded font-sans tracking-widest text-xs uppercase font-semibold transition-colors mt-3"
+            className="bg-[#111111] hover:bg-rajgharana-gold text-white py-3 rounded font-sans tracking-widest text-xs uppercase font-semibold transition-colors mt-3"
           >
             Save Product to Catalog
           </button>

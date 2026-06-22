@@ -32,7 +32,7 @@ const FAQS = [
       },
       {
         q: "How do I initiate an exchange?",
-        a: "To initiate an exchange, please contact our customer care team at care@nakhrali.com within 48 hours of receiving your order, providing your order number and the reason for exchange."
+        a: "To initiate an exchange, please contact our customer care team at care@rajgharana.com within 48 hours of receiving your order, providing your order number and the reason for exchange."
       }
     ]
   },
@@ -129,7 +129,7 @@ export default function FAQPage() {
         
         <div className="mt-16 text-center font-sans">
           <p className="text-gray-600 mb-4">Still have questions?</p>
-          <Link href="/contact" className="inline-block bg-[#111111] text-white px-8 py-3 text-sm tracking-widest uppercase hover:bg-nakhrali-gold transition-colors">
+          <Link href="/contact" className="inline-block bg-[#111111] text-white px-8 py-3 text-sm tracking-widest uppercase hover:bg-rajgharana-gold transition-colors">
             Contact Support
           </Link>
         </div>

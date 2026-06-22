@@ -28,7 +28,7 @@ export default function CheckoutPage() {
           {/* Header */}
           <div className="hidden lg:block mb-8">
             <Link href="/" className="font-serif text-3xl tracking-widest text-[#111111]">
-              NAKHRALI
+              RAJGHARANA
             </Link>
           </div>
 
@@ -49,12 +49,12 @@ export default function CheckoutPage() {
             <input 
               type="email" 
               placeholder="Email or mobile phone number" 
-              className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold transition-shadow"
+              className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold transition-shadow"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <label className="flex items-center gap-2 mt-3 cursor-pointer">
-              <input type="checkbox" className="accent-nakhrali-gold w-4 h-4" defaultChecked />
+              <input type="checkbox" className="accent-rajgharana-gold w-4 h-4" defaultChecked />
               <span className="font-sans text-sm text-gray-600">Email me with news and offers</span>
             </label>
           </section>
@@ -64,7 +64,7 @@ export default function CheckoutPage() {
             <h2 className="text-lg font-sans font-medium text-[#111111] mb-4">Delivery</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="col-span-1 md:col-span-2">
-                <select className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold bg-white">
+                <select className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold bg-white">
                   <option>India</option>
                   <option>United States</option>
                   <option>United Kingdom</option>
@@ -75,14 +75,14 @@ export default function CheckoutPage() {
               <input 
                 type="text" 
                 placeholder="First name (optional)" 
-                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                 value={firstName}
                 onChange={(e) => setFirstName(e.target.value)}
               />
               <input 
                 type="text" 
                 placeholder="Last name" 
-                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                 value={lastName}
                 onChange={(e) => setLastName(e.target.value)}
               />
@@ -90,7 +90,7 @@ export default function CheckoutPage() {
                 <input 
                   type="text" 
                   placeholder="Address" 
-                  className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                  className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                   value={address}
                   onChange={(e) => setAddress(e.target.value)}
                 />
@@ -98,14 +98,14 @@ export default function CheckoutPage() {
               <input 
                 type="text" 
                 placeholder="City" 
-                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                 value={city}
                 onChange={(e) => setCity(e.target.value)}
               />
               <input 
                 type="text" 
                 placeholder="State" 
-                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                 value={state}
                 onChange={(e) => setState(e.target.value)}
               />
@@ -113,7 +113,7 @@ export default function CheckoutPage() {
                 <input 
                   type="text" 
                   placeholder="PIN code" 
-                  className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                  className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                   value={pinCode}
                   onChange={(e) => setPinCode(e.target.value)}
                 />
@@ -122,14 +122,14 @@ export default function CheckoutPage() {
                 <input 
                   type="tel" 
                   placeholder="Phone" 
-                  className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold"
+                  className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                 />
               </div>
             </div>
             <label className="flex items-center gap-2 mt-3 cursor-pointer">
-              <input type="checkbox" className="accent-nakhrali-gold w-4 h-4" />
+              <input type="checkbox" className="accent-rajgharana-gold w-4 h-4" />
               <span className="font-sans text-sm text-gray-600">Save this information for next time</span>
             </label>
           </section>
@@ -147,19 +147,19 @@ export default function CheckoutPage() {
               >
                 <div className="flex items-center justify-between">
                   <label className="flex items-center gap-3 cursor-pointer">
-                    <input type="radio" checked={paymentMethod === 'card'} onChange={() => {}} className="accent-nakhrali-gold w-4 h-4" />
+                    <input type="radio" checked={paymentMethod === 'card'} onChange={() => {}} className="accent-rajgharana-gold w-4 h-4" />
                     <span className="font-sans text-sm font-medium">Credit / Debit Card</span>
                   </label>
                   <CreditCard size={20} className="text-gray-400" />
                 </div>
                 {paymentMethod === 'card' && (
                   <div className="mt-4 flex flex-col gap-3 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <input type="text" placeholder="Card number" className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold" />
+                    <input type="text" placeholder="Card number" className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold" />
                     <div className="flex gap-3">
-                      <input type="text" placeholder="Expiration date (MM / YY)" className="flex-1 border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold" />
-                      <input type="text" placeholder="Security code" className="flex-1 border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold" />
+                      <input type="text" placeholder="Expiration date (MM / YY)" className="flex-1 border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold" />
+                      <input type="text" placeholder="Security code" className="flex-1 border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold" />
                     </div>
-                    <input type="text" placeholder="Name on card" className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold" />
+                    <input type="text" placeholder="Name on card" className="w-full border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold" />
                   </div>
                 )}
               </div>
@@ -170,7 +170,7 @@ export default function CheckoutPage() {
                 onClick={() => setPaymentMethod('upi')}
               >
                 <label className="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" checked={paymentMethod === 'upi'} onChange={() => {}} className="accent-nakhrali-gold w-4 h-4" />
+                  <input type="radio" checked={paymentMethod === 'upi'} onChange={() => {}} className="accent-rajgharana-gold w-4 h-4" />
                   <span className="font-sans text-sm font-medium">UPI / QR (GPay, PhonePe, Paytm)</span>
                 </label>
                 {paymentMethod === 'upi' && (
@@ -189,7 +189,7 @@ export default function CheckoutPage() {
                 onClick={() => setPaymentMethod('cod')}
               >
                 <label className="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" checked={paymentMethod === 'cod'} onChange={() => {}} className="accent-nakhrali-gold w-4 h-4" />
+                  <input type="radio" checked={paymentMethod === 'cod'} onChange={() => {}} className="accent-rajgharana-gold w-4 h-4" />
                   <span className="font-sans text-sm font-medium">Cash on Delivery (COD)</span>
                 </label>
               </div>
@@ -197,7 +197,7 @@ export default function CheckoutPage() {
           </section>
 
           {/* Submit Button */}
-          <button className="w-full bg-[#111111] text-white py-4 rounded font-sans tracking-widest text-sm uppercase hover:bg-nakhrali-gold transition-colors shadow-lg">
+          <button className="w-full bg-[#111111] text-white py-4 rounded font-sans tracking-widest text-sm uppercase hover:bg-rajgharana-gold transition-colors shadow-lg">
             Pay Now
           </button>
           
@@ -218,7 +218,7 @@ export default function CheckoutPage() {
             onClick={() => setIsSummaryOpen(!isSummaryOpen)}
           >
             <div className="flex items-center gap-2 text-[#111111] font-sans font-medium">
-              <ShoppingBag size={20} className="text-nakhrali-gold" /> {isSummaryOpen ? "Hide" : "Show"} order summary <ChevronDown size={16} className={`transition-transform ${isSummaryOpen ? "rotate-180" : ""}`} />
+              <ShoppingBag size={20} className="text-rajgharana-gold" /> {isSummaryOpen ? "Hide" : "Show"} order summary <ChevronDown size={16} className={`transition-transform ${isSummaryOpen ? "rotate-180" : ""}`} />
             </div>
             <span className="font-sans font-medium text-lg">₹ 8,995</span>
           </div>
@@ -251,7 +251,7 @@ export default function CheckoutPage() {
               <input 
                 type="text" 
                 placeholder="Discount code or gift card" 
-                className="flex-1 border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-nakhrali-gold focus:ring-1 focus:ring-nakhrali-gold bg-white"
+                className="flex-1 border border-gray-300 rounded p-3 font-sans text-sm outline-none focus:border-rajgharana-gold focus:ring-1 focus:ring-rajgharana-gold bg-white"
               />
               <button className="bg-gray-200 text-gray-500 px-4 py-3 rounded font-sans font-medium text-sm transition-colors hover:bg-gray-300">Apply</button>
             </div>

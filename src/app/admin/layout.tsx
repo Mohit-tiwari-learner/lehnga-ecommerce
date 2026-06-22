@@ -39,9 +39,9 @@ const CUSTOMERS = [
 
 // ERP Mock Data
 const INITIAL_SHOPS = [
-  { id: "shop_1", name: "Nakhrali Flagship", location: "Lalghati, Bhopal", manager: "Rohan Desai", todayRevenue: 145000, todayOrders: 12, target: 150000 },
-  { id: "shop_2", name: "Nakhrali Boutique", location: "New Market, Bhopal", manager: "Simran Kaur", todayRevenue: 85000, todayOrders: 7, target: 100000 },
-  { id: "shop_3", name: "Nakhrali Galleria", location: "MP Nagar, Bhopal", manager: "Aarav Patel", todayRevenue: 62000, todayOrders: 5, target: 80000 }
+  { id: "shop_1", name: "Rajgharana Flagship", location: "Lalghati, Bhopal", manager: "Rohan Desai", todayRevenue: 145000, todayOrders: 12, target: 150000 },
+  { id: "shop_2", name: "Rajgharana Boutique", location: "New Market, Bhopal", manager: "Simran Kaur", todayRevenue: 85000, todayOrders: 7, target: 100000 },
+  { id: "shop_3", name: "Rajgharana Galleria", location: "MP Nagar, Bhopal", manager: "Aarav Patel", todayRevenue: 62000, todayOrders: 5, target: 80000 }
 ];
 
 const INITIAL_INVENTORIES = [
@@ -112,8 +112,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   const [inventoryItems, setInventoryItems] = useState(INITIAL_INVENTORY_ITEMS);
 
   // Store Settings
-  const [storeName, setStoreName] = useState("Nakhrali Store");
-  const [contactEmail, setContactEmail] = useState("support@nakhrali.com");
+  const [storeName, setStoreName] = useState("Rajgharana Store");
+  const [contactEmail, setContactEmail] = useState("support@rajgharana.com");
   const [currency, setCurrency] = useState("INR (₹)");
   const [freeShippingThreshold, setFreeShippingThreshold] = useState("1500");
 
@@ -163,8 +163,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         
         {/* Toast Alert */}
         {toastMessage && (
-          <div className="fixed bottom-8 right-8 bg-[#111111] text-white px-6 py-4 rounded shadow-2xl z-50 flex items-center gap-2 border border-nakhrali-gold animate-in fade-in slide-in-from-bottom-5 duration-300">
-            <CheckCircle size={18} className="text-nakhrali-gold" />
+          <div className="fixed bottom-8 right-8 bg-[#111111] text-white px-6 py-4 rounded shadow-2xl z-50 flex items-center gap-2 border border-rajgharana-gold animate-in fade-in slide-in-from-bottom-5 duration-300">
+            <CheckCircle size={18} className="text-rajgharana-gold" />
             <span className="text-sm font-medium tracking-wide">{toastMessage}</span>
           </div>
         )}
@@ -233,7 +233,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
               </div>
 
               <div className="flex flex-col gap-1">
-                <span className="text-xs font-semibold text-nakhrali-gold tracking-wider uppercase mb-2 px-4">ERP Systems</span>
+                <span className="text-xs font-semibold text-rajgharana-gold tracking-wider uppercase mb-2 px-4">ERP Systems</span>
                 {navItems.filter(i => i.section === "ERP").map((item) => {
                   const Icon = item.icon;
                   const isActive = pathname === item.path;

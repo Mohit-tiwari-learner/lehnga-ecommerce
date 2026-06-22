@@ -18,14 +18,14 @@ export default function AboutPage() {
           <h1 className="text-4xl md:text-5xl font-serif text-[#111111] tracking-wide mb-6">
             Our Story
           </h1>
-          <div className="w-16 h-[1px] bg-nakhrali-gold mx-auto"></div>
+          <div className="w-16 h-[1px] bg-rajgharana-gold mx-auto"></div>
         </div>
 
         {/* Hero Image */}
         <div className="relative w-full aspect-[21/9] md:aspect-[21/9] mb-16">
           <Image 
             src="/extracted_photos/beautiful-and-elegant-teal-green-colour-georgette-fabric-lehenga-choli-reseller-in-surat-5067-green/page-0.png"
-            alt="Nakhrali Heritage"
+            alt="Rajgharana Heritage"
             fill
             className="object-cover object-top"
           />
@@ -39,7 +39,7 @@ export default function AboutPage() {
           
           <div className="space-y-6 text-gray-600 leading-relaxed text-[15px]">
             <p>
-              Welcome to Nakhrali, where tradition meets contemporary elegance. We are dedicated to bringing you the finest collection of women's ethnic fashion, crafted with meticulous attention to detail and a deep appreciation for India's rich textile heritage. Our designs celebrate the spirit of the modern Indian woman who embraces her roots while stepping confidently into the future.
+              Welcome to Rajgharana, where tradition meets contemporary elegance. We are dedicated to bringing you the finest collection of women's ethnic fashion, crafted with meticulous attention to detail and a deep appreciation for India's rich textile heritage. Our designs celebrate the spirit of the modern Indian woman who embraces her roots while stepping confidently into the future.
             </p>
             
             <p>
@@ -47,7 +47,7 @@ export default function AboutPage() {
             </p>
 
             <p>
-              We believe that fashion should be as unique as you are. That's why we offer personalized styling assistance and fit guidance, ensuring that you find your perfect ensemble for every occasion. Join the Nakhrali family today and redefine your ethnic wardrobe with pieces that are designed to turn heads and create lasting memories.
+              We believe that fashion should be as unique as you are. That's why we offer personalized styling assistance and fit guidance, ensuring that you find your perfect ensemble for every occasion. Join the Rajgharana family today and redefine your ethnic wardrobe with pieces that are designed to turn heads and create lasting memories.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function AboutPage() {
             <div>
               <h3 className="text-lg font-serif text-[#111111] mb-3">Our Promise</h3>
               <p className="text-sm text-gray-600 leading-relaxed">
-                We promise authentic materials, ethical sourcing, transparent pricing, and a customer experience that makes every woman feel like royalty when she wears Nakhrali.
+                We promise authentic materials, ethical sourcing, transparent pricing, and a customer experience that makes every woman feel like royalty when she wears Rajgharana.
               </p>
             </div>
           </div>
