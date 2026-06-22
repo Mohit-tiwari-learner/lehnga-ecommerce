@@ -49,8 +49,13 @@ const INITIAL_INVENTORIES = [
   { id: "inv_2", name: "North Distribution Center", location: "Gurugram, Haryana", capacity: 5000, currentLoad: 3120, manager: "Vikram Yadav" }
 ];
 
+interface InventoryItem {
+  productId: string;
+  allocations: Record<string, number>;
+}
+
 // Mapping product stock to specific locations
-const INITIAL_INVENTORY_ITEMS = [
+const INITIAL_INVENTORY_ITEMS: InventoryItem[] = [
   { productId: "l1", allocations: { "inv_1": 5, "inv_2": 3, "shop_1": 2, "shop_2": 1, "shop_3": 1 } },
   { productId: "s1", allocations: { "inv_1": 4, "inv_2": 2, "shop_1": 1, "shop_2": 1, "shop_3": 0 } },
   { productId: "k1", allocations: { "inv_1": 10, "inv_2": 8, "shop_1": 3, "shop_2": 2, "shop_3": 1 } },
