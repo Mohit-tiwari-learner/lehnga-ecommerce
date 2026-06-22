@@ -21,7 +21,7 @@ export function KarismaticKurtas() {
             {/* Middle Image (Beige Outfit) */}
             <div className="relative h-full flex-1 transition-transform duration-700 group-hover:scale-105 hidden md:block">
               <Image
-                src="https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop"
                 alt="Beige Kurta"
                 fill
                 className="object-cover"
@@ -31,7 +31,7 @@ export function KarismaticKurtas() {
             {/* Right Image (Blue Outfit) */}
             <div className="relative h-full flex-1 transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop"
                 alt="Blue Kurta"
                 fill
                 className="object-cover"
@@ -61,3 +61,4 @@ export function KarismaticKurtas() {
     </div>
   );
 }
+

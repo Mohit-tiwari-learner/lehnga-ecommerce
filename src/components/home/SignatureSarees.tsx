@@ -13,7 +13,7 @@ const SIGNATURE_SAREES: Product[] = [
     id: "sig-2",
     title: "Forest Fiesta Saree",
     price: 1695,
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
     badge: "Bestseller",
     shipsInDays: 2,
     swatches: ["#4a5d23", "#8b0000"],
@@ -42,3 +42,4 @@ export function SignatureSarees() {
     />
   );
 }
+

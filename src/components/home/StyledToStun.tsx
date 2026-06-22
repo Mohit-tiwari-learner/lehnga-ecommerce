@@ -15,7 +15,7 @@ const STYLED_TO_STUN_PRODUCTS: Product[] = [
     id: "indo-2",
     title: "Zarina Green Satin Crop Top Skirt Set with Embroidered Detailing",
     price: 14495,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
     swatches: ["#008000", "#ff0000"],
   },
@@ -23,7 +23,7 @@ const STYLED_TO_STUN_PRODUCTS: Product[] = [
     id: "indo-3",
     title: "Zyren Black Draped Dress with Jacket-Style Embellished Front",
     price: 7795,
-    image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
   {
@@ -51,7 +51,7 @@ export function StyledToStun() {
             <Link href="/collections/indo-western" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
                 <Image
-                  src="https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=800&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
                   alt="The Indo-Western Affair"
                   fill
                   className="object-cover"
@@ -99,3 +99,4 @@ export function StyledToStun() {
     </div>
   );
 }
+

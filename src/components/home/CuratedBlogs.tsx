@@ -15,7 +15,7 @@ const BLOGS = [
     title: "Suit Up in Style",
     date: "28 Sep 2023",
     description: "A comprehensive guide on styling our bestselling suit sets for the upcoming festive season. Tips from our in-house stylists.",
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ const BLOGS = [
     title: "A Guide to Choosing the Perfect Blouse",
     date: "02 Sep 2023",
     description: "Necklines, sleeves, and fits. Everything you need to know before getting your next statement blouse stitched.",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
   },
 ];
 
@@ -79,3 +79,4 @@ export function CuratedBlogs() {
     </div>
   );
 }
+

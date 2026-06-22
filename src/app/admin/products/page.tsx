@@ -15,7 +15,7 @@ export default function ProductsPage() {
   const [newPrice, setNewPrice] = useState("");
   const [newStock, setNewStock] = useState("");
   const [newCategory, setNewCategory] = useState("Sarees");
-  const [newImage, setNewImage] = useState("https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=200&auto=format&fit=crop");
+  const [newImage, setNewImage] = useState("https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=200&auto=format&fit=crop");
 
   // Add Product handler
   const handleAddProduct = (e: React.FormEvent) => {
@@ -188,3 +188,4 @@ export default function ProductsPage() {
     </div>
   );
 }
+

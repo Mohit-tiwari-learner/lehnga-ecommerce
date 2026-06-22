@@ -40,7 +40,7 @@ export function ProductCard({ product }: { product: Product }) {
           </button>
         </div>
 
-        <Link href={`/product/${product.id}`}>
+        <Link href={`/product/${product.id}`} className="relative block w-full h-full">
           <Image
             src={product.image}
             alt={product.title}

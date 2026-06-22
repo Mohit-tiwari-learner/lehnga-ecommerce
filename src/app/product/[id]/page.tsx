@@ -27,7 +27,7 @@ const CRAFT_DETAILS: Record<string, {
     artisanName: "Sohan Lal & Weavers of Kashi",
     artisanDesc: "Crafted by master weavers whose families have kept the handloom heritage alive for six generations. Every border and motif is hand-threaded with metallic zari.",
     imageLeft: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
-    imageRight: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    imageRight: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     materials: ["Pure Mulberry Silk threads", "Metallic Gold Zari threads", "Organic vegetable dyes"]
   },
   "lehengas": {
@@ -35,7 +35,7 @@ const CRAFT_DETAILS: Record<string, {
     techniqueDesc: "Each panel is carefully mounted on an embroidery frame (Adda) and meticulously embellished by hand with glass beads, faux pearls, metallic wires, and sequins.",
     artisanName: "Aftab & Zardozi Artisans",
     artisanDesc: "Worked on for over 45 hours by highly skilled zardozi craftsmen. This detailing offers a rich, three-dimensional look that catches light from every angle.",
-    imageLeft: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+    imageLeft: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
     imageRight: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     materials: ["Faux Seed Pearls", "Metallic bullion wire (dabka)", "Lightweight fine net mesh"]
   },
@@ -55,14 +55,14 @@ const DEFAULT_CRAFT_DETAILS = {
   techniqueDesc: "Made with precise craftsmanship and premium fabrics. Tailored using double-stitched seams and finished with delicate custom details.",
   artisanName: "Nakhrali Tailoring Guild",
   artisanDesc: "Meticulously designed and checked by our local production unit, supporting ethical labor standards and small artisan businesses.",
-  imageLeft: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+  imageLeft: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
   imageRight: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
   materials: ["Premium blended fibers", "Eco-friendly dyes", "Polished metallic buttons"]
 };
 
 // Styled matching accessories to Complete The Look
 const ACCESSORIES = [
-  { id: "acc1", name: "Oxidised Choker Set with Pearls", price: 2450, image: "https://images.unsplash.com/photo-1599643478524-fb66f70d00bb?q=80&w=300&auto=format&fit=crop" },
+  { id: "acc1", name: "Oxidised Choker Set with Pearls", price: 2450, image: "https://images.unsplash.com/photo-1599643478524-fb66f70d00ea?q=80&w=300&auto=format&fit=crop" },
   { id: "acc2", name: "Sharini Oxidised Tribal Ring", price: 250, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=300&auto=format&fit=crop" },
   { id: "acc3", name: "Hand-woven Silk Juttis", price: 1895, image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=300&auto=format&fit=crop" }
 ];
@@ -92,7 +92,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         id: resolvedParams.id,
         title: "Signature Nakhrali Handloom Outfit",
         price: 18995,
-        image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=800&auto=format&fit=crop",
+        image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
         shipsInDays: 4,
       },
       category: "sarees"
@@ -107,8 +107,8 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
     ? [product.image, ...product.gallery]
     : [
         product.image,
-        "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop",
         "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=800&auto=format&fit=crop"
       ];
 
@@ -171,7 +171,9 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   className={`relative w-20 md:w-full aspect-[3/4] border-2 transition-all rounded overflow-hidden shadow-sm shrink-0 snap-start flex-none
                     ${activeImage === idx ? 'border-nakhrali-gold scale-102 shadow-md' : 'border-transparent opacity-80 hover:opacity-100'}`}
                 >
-                  <Image src={img} alt={`Gallery Thumbnail ${idx}`} fill className="object-cover" />
+                  <div className="relative w-full h-full">
+                    <Image src={img} alt={`Gallery Thumbnail ${idx}`} fill className="object-cover" />
+                  </div>
                 </button>
               ))}
             </div>

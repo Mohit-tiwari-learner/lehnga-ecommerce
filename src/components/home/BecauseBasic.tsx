@@ -22,14 +22,14 @@ const BECAUSE_BASIC_PRODUCTS: Product[] = [
     id: "basic-3",
     title: "Olive Green Partywear Suit",
     price: 4295,
-    image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
   {
     id: "basic-4",
     title: "Maroon Silk Kurta Set",
     price: 4895,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
 ];
@@ -83,3 +83,4 @@ export function BecauseBasic() {
     </div>
   );
 }
+

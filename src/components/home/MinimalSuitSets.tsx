@@ -6,21 +6,21 @@ const MINIMAL_SUITS_PRODUCTS: Product[] = [
     id: "minimal-1",
     title: "Pallav Print Pant Kurta Set - Casual Cotton Wear",
     price: 2295,
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
   {
     id: "minimal-2",
     title: "Umrao Cream Angrakha Cotton Kurta Pant Set",
     price: 4495,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 14,
   },
   {
     id: "minimal-3",
     title: "Rozana Mustard Cotton Pant Kurta Set with Patch Work",
     price: 2995,
-    image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
   {
@@ -43,3 +43,4 @@ export function MinimalSuitSets() {
     </div>
   );
 }
+

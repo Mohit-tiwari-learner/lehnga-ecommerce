@@ -8,7 +8,7 @@ const BLOUSES_PRODUCTS: Product[] = [
     id: "blouse-1",
     title: "Sadhana Black Cotton Blouse with Printed Detail",
     price: 1895,
-    image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
   {
@@ -23,7 +23,7 @@ const BLOUSES_PRODUCTS: Product[] = [
     id: "blouse-3",
     title: "Gajgamini Red Cotton Printed Blouse Collection",
     price: 1995,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
     swatches: ["#ff0000", "#000000", "#ffffff", "#ffff00", "#800080"],
   },
@@ -47,7 +47,7 @@ export function BlousesSection() {
           <Link href="/collections/blouses" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden bg-[#e5dfd3]">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=800&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=800&auto=format&fit=crop"
                 alt="Statement Blouses"
                 fill
                 className="object-cover"
@@ -94,3 +94,4 @@ export function BlousesSection() {
     </div>
   );
 }
+

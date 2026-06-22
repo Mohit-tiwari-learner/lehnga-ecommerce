@@ -3,12 +3,12 @@ import Link from "next/link";
 
 const CATEGORIES = [
   { title: "INDO FIT LEHENGAS", image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop" },
-  { title: "HANDPICKED JEWELS", image: "https://images.unsplash.com/photo-1599643478524-fb66f70d00bb?q=80&w=400&auto=format&fit=crop" },
-  { title: "SALWAAR KAMEEZ", image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=400&auto=format&fit=crop" },
+  { title: "HANDPICKED JEWELS", image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=400&auto=format&fit=crop" },
+  { title: "SALWAAR KAMEEZ", image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=400&auto=format&fit=crop" },
   { title: "MODERN DRAPES", image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=400&auto=format&fit=crop" },
-  { title: "EVERYDAY ETHNIC", image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=400&auto=format&fit=crop" },
+  { title: "EVERYDAY ETHNIC", image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop" },
   { title: "COMFORT CO-ORDS", image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=400&auto=format&fit=crop" },
-  { title: "COMFORT TOPS", image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=400&auto=format&fit=crop" },
+  { title: "COMFORT TOPS", image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=400&auto=format&fit=crop" },
   { title: "MY DAFTAR FITS", image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=400&auto=format&fit=crop" },
 ];
 
@@ -42,3 +42,4 @@ export function CategoryGrid() {
     </div>
   );
 }
+

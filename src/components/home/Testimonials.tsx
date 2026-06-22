@@ -8,7 +8,7 @@ const TESTIMONIALS = [
   {
     id: 1,
     name: "Priya Banga",
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=400&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop",
     rating: 5,
     text: "The saree is absolutely gorgeous and the fabric is so comfortable. Wore it to a wedding and everyone asked me about it. Very happy with the purchase!",
   },
@@ -22,7 +22,7 @@ const TESTIMONIALS = [
   {
     id: 3,
     name: "Kritika Sinha",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=400&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=400&auto=format&fit=crop",
     rating: 5,
     text: "I bought this for my Haldi ceremony and it was the best decision. Such vibrant colors and perfect stitching.",
   },
@@ -123,3 +123,4 @@ export function Testimonials() {
     </div>
   );
 }
+

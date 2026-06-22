@@ -13,7 +13,7 @@ const REELS = [
   {
     id: 2,
     title: "Whispers of Summer",
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const REELS = [
   {
     id: 5,
     title: "Festive Must-Haves",
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
   },
   {
     id: 6,
@@ -103,3 +103,4 @@ export function ReelsSlider() {
     </div>
   );
 }
+

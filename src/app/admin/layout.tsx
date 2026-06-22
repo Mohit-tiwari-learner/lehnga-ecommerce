@@ -14,7 +14,7 @@ import {
 
 // Mock initial data definitions
 const INITIAL_PRODUCTS = [
-  { id: "l1", title: "Aveline Magenta Lehenga", sku: "NKL-LH-001", price: 22895, stock: 12, category: "Lehengas", image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=200&auto=format&fit=crop" },
+  { id: "l1", title: "Aveline Magenta Lehenga", sku: "NKL-LH-001", price: 22895, stock: 12, category: "Lehengas", image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=200&auto=format&fit=crop" },
   { id: "s1", title: "Kanchipuram Pure Silk Saree", sku: "NKL-SR-005", price: 34500, stock: 8, category: "Sarees", image: "https://images.unsplash.com/photo-1610189012371-331da2912423?q=80&w=200&auto=format&fit=crop" },
   { id: "k1", title: "Embroidered Anarkali Kurta Set", sku: "NKL-KT-012", price: 12999, stock: 24, category: "Kurta Sets", image: "https://images.unsplash.com/photo-1621578330541-b8abf10cd832?q=80&w=200&auto=format&fit=crop" },
   { id: "j1", title: "Kundan Choker Necklace Set", sku: "NKL-JW-044", price: 18500, stock: 5, category: "Jewellery", image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=200&auto=format&fit=crop" }
@@ -165,3 +165,4 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
     </AdminContext.Provider>
   );
 }
+

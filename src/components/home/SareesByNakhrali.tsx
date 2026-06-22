@@ -14,7 +14,7 @@ export function SareesByNakhrali() {
           <Link href="/collections/sarees" className="group relative w-full h-[500px] md:h-[600px] overflow-hidden">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image 
-                src="https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=800&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
                 alt="Woven in Tradition"
                 fill
                 className="object-cover"
@@ -34,7 +34,7 @@ export function SareesByNakhrali() {
           <Link href="/collections/sarees" className="group relative w-full h-[500px] md:h-[600px] overflow-hidden">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image 
-                src="https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=800&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop"
                 alt="Modern Drapes Royal Mood"
                 fill
                 className="object-cover object-top"
@@ -53,3 +53,4 @@ export function SareesByNakhrali() {
     </div>
   );
 }
+

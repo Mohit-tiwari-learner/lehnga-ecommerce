@@ -8,7 +8,7 @@ const OXIDIZED_JEWELLERY_PRODUCTS: Product[] = [
     id: "ox-1",
     title: "Peacock Charm Oxidised Jewellery Set with Earrings",
     price: 795,
-    image: "https://images.unsplash.com/photo-1599643478524-fb66f70d00bb?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
     badge: "Restocked",
   },
@@ -69,3 +69,4 @@ export function OxidizedElegance() {
     </div>
   );
 }
+

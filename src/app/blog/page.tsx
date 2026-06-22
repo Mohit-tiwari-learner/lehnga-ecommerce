@@ -25,7 +25,7 @@ const BLOG_POSTS = [
     excerpt: "Expert tips on maintaining the luster and longevity of your heavy bridal and festive ethnic wear.",
     date: "April 10, 2026",
     category: "Fabric Care",
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
   },
   {
     id: 4,
@@ -123,3 +123,4 @@ export default function BlogPage() {
     </div>
   );
 }
+

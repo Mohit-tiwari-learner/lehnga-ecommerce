@@ -24,7 +24,7 @@ export default function AboutPage() {
         {/* Hero Image */}
         <div className="relative w-full aspect-[21/9] md:aspect-[21/9] mb-16">
           <Image 
-            src="https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=1200&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1200&auto=format&fit=crop"
             alt="Nakhrali Heritage"
             fill
             className="object-cover object-top"
@@ -77,3 +77,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

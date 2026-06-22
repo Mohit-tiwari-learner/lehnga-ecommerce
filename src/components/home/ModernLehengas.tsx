@@ -8,7 +8,7 @@ const MODERN_LEHENGAS_PRODUCTS: Product[] = [
     id: "leh-1",
     title: "Riva Maroon Indowestern Lehenga Set with Embroidered Cape",
     price: 44895,
-    image: "https://images.unsplash.com/photo-1583391733958-611825512a4c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 21,
   },
   {
@@ -28,7 +28,7 @@ const MODERN_LEHENGAS_PRODUCTS: Product[] = [
     id: "leh-4",
     title: "Calira Beige Beaded Indo-Western Lehenga Set",
     price: 23895,
-    image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
   },
 ];
 
@@ -42,7 +42,7 @@ export function ModernLehengas() {
             <Link href="/collections/lehengas" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
                 <Image
-                  src="https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=800&auto=format&fit=crop"
+                  src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop"
                   alt="Modern Lehengas"
                   fill
                   className="object-cover"
@@ -87,3 +87,4 @@ export function ModernLehengas() {
     </div>
   );
 }
+

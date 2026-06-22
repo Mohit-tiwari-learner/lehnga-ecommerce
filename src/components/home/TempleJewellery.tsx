@@ -8,7 +8,7 @@ const TEMPLE_JEWELLERY_PRODUCTS: Product[] = [
     id: "jewel-1",
     title: "Alora Pink Stone Long Kashmiri Earring",
     price: 4695,
-    image: "https://images.unsplash.com/photo-1599643478524-fb66f70d00bb?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
     swatches: ["#ffc0cb", "#008000", "#ff0000", "#0000ff", "#ffffff"],
   },
@@ -43,7 +43,7 @@ export function TempleJewellery() {
           <Link href="/collections/temple-jewellery" className="block w-full h-full">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1599643478524-fb66f70d00bb?q=80&w=1200&auto=format&fit=crop"
+                src="https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=1200&auto=format&fit=crop"
                 alt="Gajmangal Temple Jewellery"
                 fill
                 className="object-cover object-center"
@@ -68,3 +68,4 @@ export function TempleJewellery() {
     </div>
   );
 }
+

@@ -14,7 +14,7 @@ const PARTY_CRASHERS: Product[] = [
     id: "party-2",
     title: "Botanic Luxe Brown Saree with Readymade Blouse",
     price: 14895,
-    image: "https://images.unsplash.com/photo-1610030469983-98e550d6153c?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
     swatches: ["#8b4513", "#d2b48c"],
   },
@@ -22,7 +22,7 @@ const PARTY_CRASHERS: Product[] = [
     id: "party-3",
     title: "Blooming Lotus Mirror Work Saree with Readymade Blouse",
     price: 14895,
-    image: "https://images.unsplash.com/photo-1584226786801-7662c1613eb5?q=80&w=600&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
     shipsInDays: 4,
   },
   {
@@ -42,3 +42,4 @@ export function PartyCrashers() {
     />
   );
 }
+
