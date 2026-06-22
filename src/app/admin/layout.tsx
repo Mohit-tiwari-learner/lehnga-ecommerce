@@ -9,7 +9,10 @@ import {
   ShoppingBag, 
   Users, 
   Settings as SettingsIcon,
-  CheckCircle
+  CheckCircle,
+  Building2,
+  Store,
+  Boxes
 } from "lucide-react";
 
 // Mock initial data definitions
@@ -34,12 +37,41 @@ const CUSTOMERS = [
   { id: "CST-004", name: "Neha Verma", email: "neha.v@gmail.com", orders: 1, spent: 18500, city: "Delhi" }
 ];
 
+// ERP Mock Data
+const INITIAL_SHOPS = [
+  { id: "shop_1", name: "Nakhrali Flagship", location: "Bandra West, Mumbai", manager: "Rohan Desai", todayRevenue: 145000, todayOrders: 12, target: 150000 },
+  { id: "shop_2", name: "Nakhrali Boutique", location: "Connaught Place, Delhi", manager: "Simran Kaur", todayRevenue: 85000, todayOrders: 7, target: 100000 },
+  { id: "shop_3", name: "Nakhrali Galleria", location: "CG Road, Ahmedabad", manager: "Aarav Patel", todayRevenue: 62000, todayOrders: 5, target: 80000 }
+];
+
+const INITIAL_INVENTORIES = [
+  { id: "inv_1", name: "Central Warehouse", location: "Bhiwandi, Maharashtra", capacity: 10000, currentLoad: 6540, manager: "Karan Singh" },
+  { id: "inv_2", name: "North Distribution Center", location: "Gurugram, Haryana", capacity: 5000, currentLoad: 3120, manager: "Vikram Yadav" }
+];
+
+// Mapping product stock to specific locations
+const INITIAL_INVENTORY_ITEMS = [
+  { productId: "l1", allocations: { "inv_1": 5, "inv_2": 3, "shop_1": 2, "shop_2": 1, "shop_3": 1 } },
+  { productId: "s1", allocations: { "inv_1": 4, "inv_2": 2, "shop_1": 1, "shop_2": 1, "shop_3": 0 } },
+  { productId: "k1", allocations: { "inv_1": 10, "inv_2": 8, "shop_1": 3, "shop_2": 2, "shop_3": 1 } },
+  { productId: "j1", allocations: { "inv_1": 2, "inv_2": 1, "shop_1": 1, "shop_2": 1, "shop_3": 0 } }
+];
+
 interface AdminContextType {
   products: typeof INITIAL_PRODUCTS;
   setProducts: React.Dispatch<React.SetStateAction<typeof INITIAL_PRODUCTS>>;
   orders: typeof INITIAL_ORDERS;
   setOrders: React.Dispatch<React.SetStateAction<typeof INITIAL_ORDERS>>;
   customers: typeof CUSTOMERS;
+  
+  // ERP States
+  shops: typeof INITIAL_SHOPS;
+  setShops: React.Dispatch<React.SetStateAction<typeof INITIAL_SHOPS>>;
+  inventories: typeof INITIAL_INVENTORIES;
+  setInventories: React.Dispatch<React.SetStateAction<typeof INITIAL_INVENTORIES>>;
+  inventoryItems: typeof INITIAL_INVENTORY_ITEMS;
+  setInventoryItems: React.Dispatch<React.SetStateAction<typeof INITIAL_INVENTORY_ITEMS>>;
+
   toastMessage: string;
   triggerToast: (msg: string) => void;
   storeName: string;
@@ -68,6 +100,11 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   const [orders, setOrders] = useState(INITIAL_ORDERS);
   const [toastMessage, setToastMessage] = useState("");
   
+  // ERP States
+  const [shops, setShops] = useState(INITIAL_SHOPS);
+  const [inventories, setInventories] = useState(INITIAL_INVENTORIES);
+  const [inventoryItems, setInventoryItems] = useState(INITIAL_INVENTORY_ITEMS);
+
   // Store Settings
   const [storeName, setStoreName] = useState("Nakhrali Store");
   const [contactEmail, setContactEmail] = useState("support@nakhrali.com");
@@ -82,11 +119,14 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   };
 
   const navItems = [
-    { name: "Overview", path: "/admin", icon: BarChart3 },
-    { name: "Products", path: "/admin/products", icon: Package },
-    { name: "Orders", path: "/admin/orders", icon: ShoppingBag },
-    { name: "Customers", path: "/admin/customers", icon: Users },
-    { name: "Settings", path: "/admin/settings", icon: SettingsIcon },
+    { name: "Overview", path: "/admin", icon: BarChart3, section: "MAIN" },
+    { name: "Products", path: "/admin/products", icon: Package, section: "MAIN" },
+    { name: "Orders", path: "/admin/orders", icon: ShoppingBag, section: "MAIN" },
+    { name: "Customers", path: "/admin/customers", icon: Users, section: "MAIN" },
+    { name: "ERP Dashboard", path: "/admin/erp", icon: Building2, section: "ERP" },
+    { name: "Retail Shops", path: "/admin/erp/shops", icon: Store, section: "ERP" },
+    { name: "Inventory (WH)", path: "/admin/erp/inventory", icon: Boxes, section: "ERP" },
+    { name: "Settings", path: "/admin/settings", icon: SettingsIcon, section: "SYSTEM" },
   ];
 
   return (
@@ -96,6 +136,12 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
       orders,
       setOrders,
       customers: CUSTOMERS,
+      shops,
+      setShops,
+      inventories,
+      setInventories,
+      inventoryItems,
+      setInventoryItems,
       toastMessage,
       triggerToast,
       storeName,
@@ -134,22 +180,65 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           <div className="flex flex-col lg:flex-row gap-8">
             
             {/* Sidebar Navigation */}
-            <aside className="w-full lg:w-64 bg-white rounded border border-gray-200 p-4 shrink-0 shadow-sm flex flex-row lg:flex-col overflow-x-auto lg:overflow-x-visible gap-2 md:gap-4 scrollbar-none">
-              {navItems.map((item) => {
-                const Icon = item.icon;
-                const isActive = pathname === item.path;
-                return (
-                  <Link 
-                    key={item.name}
-                    href={item.path}
-                    className={`flex items-center gap-3 px-4 py-3 rounded text-sm font-medium transition-all tracking-wider shrink-0 w-max lg:w-full
-                      ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
-                  >
-                    <Icon size={18} />
-                    <span>{item.name}</span>
-                  </Link>
-                );
-              })}
+            <aside className="w-full lg:w-64 bg-white rounded border border-gray-200 p-4 shrink-0 shadow-sm flex flex-col gap-6 overflow-x-auto lg:overflow-x-visible scrollbar-none">
+              
+              <div className="flex flex-col gap-1">
+                <span className="text-xs font-semibold text-gray-400 tracking-wider uppercase mb-2 px-4">Main Menu</span>
+                {navItems.filter(i => i.section === "MAIN").map((item) => {
+                  const Icon = item.icon;
+                  const isActive = pathname === item.path;
+                  return (
+                    <Link 
+                      key={item.name}
+                      href={item.path}
+                      className={`flex items-center gap-3 px-4 py-2.5 rounded text-sm font-medium transition-all tracking-wide
+                        ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
+                    >
+                      <Icon size={18} />
+                      <span>{item.name}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <span className="text-xs font-semibold text-nakhrali-gold tracking-wider uppercase mb-2 px-4">ERP Systems</span>
+                {navItems.filter(i => i.section === "ERP").map((item) => {
+                  const Icon = item.icon;
+                  const isActive = pathname === item.path;
+                  return (
+                    <Link 
+                      key={item.name}
+                      href={item.path}
+                      className={`flex items-center gap-3 px-4 py-2.5 rounded text-sm font-medium transition-all tracking-wide
+                        ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
+                    >
+                      <Icon size={18} />
+                      <span>{item.name}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+
+              <div className="flex flex-col gap-1 mt-auto">
+                <span className="text-xs font-semibold text-gray-400 tracking-wider uppercase mb-2 px-4">System</span>
+                {navItems.filter(i => i.section === "SYSTEM").map((item) => {
+                  const Icon = item.icon;
+                  const isActive = pathname === item.path;
+                  return (
+                    <Link 
+                      key={item.name}
+                      href={item.path}
+                      className={`flex items-center gap-3 px-4 py-2.5 rounded text-sm font-medium transition-all tracking-wide
+                        ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
+                    >
+                      <Icon size={18} />
+                      <span>{item.name}</span>
+                    </Link>
+                  );
+                })}
+              </div>
+
             </aside>
 
             {/* Main Workspace Viewport */}
