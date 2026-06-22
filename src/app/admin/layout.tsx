@@ -99,6 +99,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   const [products, setProducts] = useState(INITIAL_PRODUCTS);
   const [orders, setOrders] = useState(INITIAL_ORDERS);
   const [toastMessage, setToastMessage] = useState("");
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
   // ERP States
   const [shops, setShops] = useState(INITIAL_SHOPS);
@@ -153,7 +154,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
       freeShippingThreshold,
       setFreeShippingThreshold
     }}>
-      <div className="w-full bg-[#f9f9f9] min-h-screen py-10 px-4 lg:px-8 font-sans">
+      <div className="w-full bg-[#f9f9f9] min-h-screen py-6 lg:py-10 px-4 lg:px-8 font-sans">
         
         {/* Toast Alert */}
         {toastMessage && (
@@ -166,10 +167,24 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         <div className="max-w-[1440px] mx-auto">
           
           {/* Header Title Bar */}
-          <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
-            <div>
-              <h1 className="text-3xl font-serif text-[#111111] tracking-wide">Administration Console</h1>
-              <p className="text-gray-500 text-sm mt-1 font-light">Monitor sales, curate products, and coordinate client deliveries.</p>
+          <div className="mb-6 lg:mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <h1 className="text-2xl lg:text-3xl font-serif text-[#111111] tracking-wide">Administration</h1>
+                <p className="text-gray-500 text-sm mt-1 font-light">Monitor sales, curate products, and coordinate delivery.</p>
+              </div>
+              
+              {/* Mobile Menu Toggle */}
+              <button 
+                className="lg:hidden p-2 border border-gray-200 rounded bg-white text-gray-700"
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              >
+                <div className="flex flex-col gap-1.5 w-5">
+                  <span className={`block h-0.5 bg-current transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+                  <span className={`block h-0.5 bg-current transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
+                  <span className={`block h-0.5 bg-current transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
+                </div>
+              </button>
             </div>
             <div className="flex items-center gap-2 bg-white px-3 py-1.5 rounded border border-gray-200 text-xs text-gray-500 shadow-sm self-start">
               <span className="w-2 h-2 rounded-full bg-[#25D366] inline-block animate-ping"></span>
@@ -180,8 +195,18 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           <div className="flex flex-col lg:flex-row gap-8">
             
             {/* Sidebar Navigation */}
-            <aside className="w-full lg:w-64 bg-white rounded border border-gray-200 p-4 shrink-0 shadow-sm flex flex-col gap-6 overflow-x-auto lg:overflow-x-visible scrollbar-none">
+            <aside className={`${isMobileMenuOpen ? 'flex fixed inset-y-0 left-0 z-50 w-64' : 'hidden'} lg:static lg:flex lg:w-64 bg-white border-r lg:border lg:border-gray-200 lg:rounded p-4 shrink-0 shadow-2xl lg:shadow-sm flex-col gap-6 scrollbar-none h-full lg:h-auto overflow-y-auto`}>
               
+              {/* Mobile Close Button inside drawer */}
+              <div className="flex lg:hidden justify-end mb-2">
+                <button 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="p-2 text-gray-500 hover:text-black hover:bg-gray-100 rounded"
+                >
+                  <span className="text-xl leading-none">&times;</span>
+                </button>
+              </div>
+
               <div className="flex flex-col gap-1">
                 <span className="text-xs font-semibold text-gray-400 tracking-wider uppercase mb-2 px-4">Main Menu</span>
                 {navItems.filter(i => i.section === "MAIN").map((item) => {
@@ -191,6 +216,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                     <Link 
                       key={item.name}
                       href={item.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex items-center gap-3 px-4 py-2.5 rounded text-sm font-medium transition-all tracking-wide
                         ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
                     >
@@ -210,6 +236,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                     <Link 
                       key={item.name}
                       href={item.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex items-center gap-3 px-4 py-2.5 rounded text-sm font-medium transition-all tracking-wide
                         ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
                     >
@@ -220,7 +247,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                 })}
               </div>
 
-              <div className="flex flex-col gap-1 mt-auto">
+              <div className="flex flex-col gap-1 mt-auto pb-6 lg:pb-0">
                 <span className="text-xs font-semibold text-gray-400 tracking-wider uppercase mb-2 px-4">System</span>
                 {navItems.filter(i => i.section === "SYSTEM").map((item) => {
                   const Icon = item.icon;
@@ -229,6 +256,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
                     <Link 
                       key={item.name}
                       href={item.path}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={`flex items-center gap-3 px-4 py-2.5 rounded text-sm font-medium transition-all tracking-wide
                         ${isActive ? "bg-[#111111] text-white shadow" : "text-gray-600 hover:bg-gray-50 hover:text-black"}`}
                     >
@@ -241,8 +269,16 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
 
             </aside>
 
+            {/* Mobile Overlay */}
+            {isMobileMenuOpen && (
+              <div 
+                className="fixed inset-0 bg-black/50 z-40 lg:hidden"
+                onClick={() => setIsMobileMenuOpen(false)}
+              />
+            )}
+
             {/* Main Workspace Viewport */}
-            <main className="flex-1 bg-white border border-gray-200 rounded p-6 md:p-8 shadow-sm min-w-0">
+            <main className="flex-1 bg-white border border-gray-200 rounded p-4 md:p-6 lg:p-8 shadow-sm min-w-0 overflow-x-hidden">
               {children}
             </main>
 
