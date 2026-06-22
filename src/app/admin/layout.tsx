@@ -39,9 +39,9 @@ const CUSTOMERS = [
 
 // ERP Mock Data
 const INITIAL_SHOPS = [
-  { id: "shop_1", name: "Nakhrali Flagship", location: "Bandra West, Mumbai", manager: "Rohan Desai", todayRevenue: 145000, todayOrders: 12, target: 150000 },
-  { id: "shop_2", name: "Nakhrali Boutique", location: "Connaught Place, Delhi", manager: "Simran Kaur", todayRevenue: 85000, todayOrders: 7, target: 100000 },
-  { id: "shop_3", name: "Nakhrali Galleria", location: "CG Road, Ahmedabad", manager: "Aarav Patel", todayRevenue: 62000, todayOrders: 5, target: 80000 }
+  { id: "shop_1", name: "Nakhrali Flagship", location: "Lalghati, Bhopal", manager: "Rohan Desai", todayRevenue: 145000, todayOrders: 12, target: 150000 },
+  { id: "shop_2", name: "Nakhrali Boutique", location: "New Market, Bhopal", manager: "Simran Kaur", todayRevenue: 85000, todayOrders: 7, target: 100000 },
+  { id: "shop_3", name: "Nakhrali Galleria", location: "MP Nagar, Bhopal", manager: "Aarav Patel", todayRevenue: 62000, todayOrders: 5, target: 80000 }
 ];
 
 const INITIAL_INVENTORIES = [
