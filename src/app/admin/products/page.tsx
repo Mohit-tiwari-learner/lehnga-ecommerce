@@ -15,7 +15,7 @@ export default function ProductsPage() {
   const [newPrice, setNewPrice] = useState("");
   const [newStock, setNewStock] = useState("");
   const [newCategory, setNewCategory] = useState("Sarees");
-  const [newImage, setNewImage] = useState("https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=200&auto=format&fit=crop");
+  const [newImage, setNewImage] = useState("/extracted_photos/navratri-special-charmful-and-dazziing-faux-georgette-fancy-fabric-lehenga-choli-collections-wholesale-in-surat-lw-7134/page-0.png");
 
   // Add Product handler
   const handleAddProduct = (e: React.FormEvent) => {
@@ -114,7 +114,7 @@ export default function ProductsPage() {
               <label className="font-sans text-xs font-semibold text-gray-600 uppercase tracking-wider">Image Unsplash URL (optional)</label>
               <input 
                 type="text"
-                placeholder="https://images.unsplash.com/photo-..."
+                placeholder="/extracted_photos/navy-stunning-blue-beautiful-colour-in-soft-georgette-fabric-lehenga-choli-wholesale-in-surat-5067-blue/page-0.png"
                 className="border border-gray-300 rounded p-2.5 font-sans text-sm bg-white outline-none focus:border-nakhrali-gold"
                 value={newImage}
                 onChange={(e) => setNewImage(e.target.value)}

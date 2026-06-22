@@ -8,28 +8,28 @@ const BECAUSE_BASIC_PRODUCTS: Product[] = [
     id: "basic-1",
     title: "Gold Satin Kurta Set with Dupatta",
     price: 3495,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/navy-stunning-blue-beautiful-colour-in-soft-georgette-fabric-lehenga-choli-wholesale-in-surat-5067-blue/page-0.png",
     shipsInDays: 4,
   },
   {
     id: "basic-2",
     title: "Silver Grey Satin Suit Set",
     price: 3895,
-    image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/new-launch-soft-and-pure-tissue-silk-fabric-with-beautiful-embroidery-work-on-lehenga-choli-supplier-in-surat-haji/page-0.png",
     shipsInDays: 4,
   },
   {
     id: "basic-3",
     title: "Olive Green Partywear Suit",
     price: 4295,
-    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/new-navratri-collection-made-of-soft-chinon-fabric-ready-to-wear-your-perfect-garba-look-awaits-wholesale-in-surat-1768/page-0.png",
     shipsInDays: 4,
   },
   {
     id: "basic-4",
     title: "Maroon Silk Kurta Set",
     price: 4895,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/olive-green-elegant-colour-georgette-soft-fancy-fabric-lehenga-choli-wholesale-in-surat-5067-olive/page-0.png",
     shipsInDays: 4,
   },
 ];
@@ -43,7 +43,7 @@ export function BecauseBasic() {
           {/* Left: Gold satin kurta */}
           <Link href="/collections/partywear-suit-sets" className="flex-1 relative group overflow-hidden aspect-[4/5] md:aspect-auto">
             <Image 
-              src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop"
+              src="/extracted_photos/premium-and-classic-fancy-satin-fabric-readymade-lehenga-choli-collections-wholesale-in-surat-7167/page-0.png"
               alt="Gold Satin Kurta"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -67,7 +67,7 @@ export function BecauseBasic() {
           {/* Right: Silver-grey satin kurta */}
           <Link href="/collections/partywear-suit-sets" className="flex-1 relative group overflow-hidden aspect-[4/5] md:aspect-auto">
             <Image 
-              src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop"
+              src="/extracted_photos/premium-and-designer-shiny-gold-crush-fancy-fabric-lehenga-choli-wholesale-in-surat-ka-5058/page-0.png"
               alt="Silver Grey Satin Kurta"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"

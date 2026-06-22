@@ -8,14 +8,14 @@ const STYLED_TO_STUN_PRODUCTS: Product[] = [
     id: "indo-1",
     title: "Gulnaar Floral Indo-Western Co-ord Set with Zari Work",
     price: 8295,
-    image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/samairaa-from-ceremonial-moments-to-joyful-festivities-chocolate-crush-fabric-this-bridesmaid-lehenga-choli-1457/page-0.png",
     shipsInDays: 21,
   },
   {
     id: "indo-2",
     title: "Zarina Green Satin Crop Top Skirt Set with Embroidered Detailing",
     price: 14495,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/shahi-wedding-set-an-exquisite-blend-of-rich-silk-satin-fabric-detailed-embroidery-work-on-lehenga-choli-reseller-in-surat-1449/page-0.png",
     shipsInDays: 4,
     swatches: ["#008000", "#ff0000"],
   },
@@ -23,14 +23,14 @@ const STYLED_TO_STUN_PRODUCTS: Product[] = [
     id: "indo-3",
     title: "Zyren Black Draped Dress with Jacket-Style Embellished Front",
     price: 7795,
-    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/soft-naysha-silk-fancy-fabric-with-embroidery-work-on-this-lehenga-collection-reseller-in-surat-1489/page-0.png",
     shipsInDays: 4,
   },
   {
     id: "indo-4",
     title: "Beaded Bloom Blue Crop Top Palazzo Set with Choker Dupatta",
     price: 8495,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/taddy-silk-fancy-and-beautiful-fabric-best-for-you-lehenga-choli-collections-supplier-in-surat-ka-5072/page-0.png",
     shipsInDays: 21,
     swatches: ["#0000ff", "#ffc0cb"],
   },
@@ -51,7 +51,7 @@ export function StyledToStun() {
             <Link href="/collections/indo-western" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
                 <Image
-                  src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+                  src="/extracted_photos/this-purple-colour-pure-rayon-beautiful-floral-lehenga-choli-is-my-ode-to-the-season-of-navratri-reseller-in-surat-1618/page-0.png"
                   alt="The Indo-Western Affair"
                   fill
                   className="object-cover"
@@ -72,7 +72,7 @@ export function StyledToStun() {
             <Link href="/collections/indo-western" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
                 <Image
-                  src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+                  src="/extracted_photos/wedding-collection-where-rich-natural-silk-meets-craftsmanship-and-vibrant-pink-glow-lehenga-choli-1459/page-0.png"
                   alt="Post-Wed Wardrobe"
                   fill
                   className="object-cover"

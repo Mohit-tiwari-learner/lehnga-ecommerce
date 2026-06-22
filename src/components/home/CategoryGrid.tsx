@@ -2,14 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 
 const CATEGORIES = [
-  { title: "INDO FIT LEHENGAS", image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop" },
-  { title: "HANDPICKED JEWELS", image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=400&auto=format&fit=crop" },
-  { title: "SALWAAR KAMEEZ", image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=400&auto=format&fit=crop" },
-  { title: "MODERN DRAPES", image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=400&auto=format&fit=crop" },
-  { title: "EVERYDAY ETHNIC", image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=400&auto=format&fit=crop" },
-  { title: "COMFORT CO-ORDS", image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=400&auto=format&fit=crop" },
-  { title: "COMFORT TOPS", image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=400&auto=format&fit=crop" },
-  { title: "MY DAFTAR FITS", image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=400&auto=format&fit=crop" },
+  { title: "INDO FIT LEHENGAS", image: "/extracted_photos/this-purple-colour-pure-rayon-beautiful-floral-lehenga-choli-is-my-ode-to-the-season-of-navratri-reseller-in-surat-1618/page-0.png" },
+  { title: "HANDPICKED JEWELS", image: "/extracted_photos/wedding-collection-where-rich-natural-silk-meets-craftsmanship-and-vibrant-pink-glow-lehenga-choli-1459/page-0.png" },
+  { title: "SALWAAR KAMEEZ", image: "/extracted_photos/beautiful-and-elegant-teal-green-colour-georgette-fabric-lehenga-choli-reseller-in-surat-5067-green/page-0.png" },
+  { title: "MODERN DRAPES", image: "/extracted_photos/heavy-sparkling-and-beautiful-wine-colour-georgette-fancy-fabric-lehenga-choli-reseller-in-surat-5067-wine/page-0.png" },
+  { title: "EVERYDAY ETHNIC", image: "/extracted_photos/launching-navratri-special-georgettet-cotton-fancy-fabric-lehenga-choli-reseller-in-surat-582/page-0.png" },
+  { title: "COMFORT CO-ORDS", image: "/extracted_photos/launching-navratri-special-soft-and-pure-cotton-fabric-lehenga-choli-wholesale-in-surat-581/page-0.png" },
+  { title: "COMFORT TOPS", image: "/extracted_photos/navratri-new-and-best-collection-tasar-silk-fancy-and-beautiful-fabric-lehenga-choli-reseller-in-surat-1734/page-0.png" },
+  { title: "MY DAFTAR FITS", image: "/extracted_photos/navratri-special-charmful-and-dazziing-faux-georgette-fancy-fabric-lehenga-choli-collections-wholesale-in-surat-lw-7134/page-0.png" },
 ];
 
 export function CategoryGrid() {

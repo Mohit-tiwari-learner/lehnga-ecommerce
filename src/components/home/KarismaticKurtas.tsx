@@ -11,7 +11,7 @@ export function KarismaticKurtas() {
             {/* Left Image (Yellow Outfit) */}
             <div className="relative h-full flex-1 transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop"
+                src="/extracted_photos/soft-naysha-silk-fancy-fabric-with-embroidery-work-on-this-lehenga-collection-reseller-in-surat-1489/page-0.png"
                 alt="Yellow Kurta"
                 fill
                 className="object-cover"
@@ -21,7 +21,7 @@ export function KarismaticKurtas() {
             {/* Middle Image (Beige Outfit) */}
             <div className="relative h-full flex-1 transition-transform duration-700 group-hover:scale-105 hidden md:block">
               <Image
-                src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop"
+                src="/extracted_photos/taddy-silk-fancy-and-beautiful-fabric-best-for-you-lehenga-choli-collections-supplier-in-surat-ka-5072/page-0.png"
                 alt="Beige Kurta"
                 fill
                 className="object-cover"
@@ -31,7 +31,7 @@ export function KarismaticKurtas() {
             {/* Right Image (Blue Outfit) */}
             <div className="relative h-full flex-1 transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop"
+                src="/extracted_photos/this-purple-colour-pure-rayon-beautiful-floral-lehenga-choli-is-my-ode-to-the-season-of-navratri-reseller-in-surat-1618/page-0.png"
                 alt="Blue Kurta"
                 fill
                 className="object-cover"

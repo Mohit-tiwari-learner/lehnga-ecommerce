@@ -229,7 +229,7 @@ export default function CheckoutPage() {
               <div className="flex items-center gap-4 relative">
                 <div className="relative w-16 h-16 bg-white border border-gray-200 rounded flex-none">
                   <Image 
-                    src="https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=200&auto=format&fit=crop"
+                    src="/extracted_photos/premium-and-designer-shiny-gold-crush-fancy-fabric-lehenga-choli-wholesale-in-surat-ka-5058/page-0.png"
                     alt="Product"
                     fill
                     className="object-cover rounded"

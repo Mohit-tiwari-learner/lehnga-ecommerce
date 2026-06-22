@@ -56,7 +56,7 @@ export function CartDrawer() {
               <div className="flex gap-4">
                 <div className="relative w-24 aspect-[3/4] bg-gray-100 rounded">
                   <Image 
-                    src="https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=200&auto=format&fit=crop"
+                    src="/extracted_photos/navratri-special-charmful-and-dazziing-faux-georgette-fancy-fabric-lehenga-choli-collections-wholesale-in-surat-lw-7134/page-0.png"
                     alt="Cart Item"
                     fill
                     className="object-cover"

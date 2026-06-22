@@ -14,7 +14,7 @@ export function SareesByNakhrali() {
           <Link href="/collections/sarees" className="group relative w-full h-[500px] md:h-[600px] overflow-hidden">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image 
-                src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+                src="/extracted_photos/new-navratri-collection-made-of-soft-chinon-fabric-ready-to-wear-your-perfect-garba-look-awaits-wholesale-in-surat-1768/page-0.png"
                 alt="Woven in Tradition"
                 fill
                 className="object-cover"
@@ -34,7 +34,7 @@ export function SareesByNakhrali() {
           <Link href="/collections/sarees" className="group relative w-full h-[500px] md:h-[600px] overflow-hidden">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image 
-                src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop"
+                src="/extracted_photos/olive-green-elegant-colour-georgette-soft-fancy-fabric-lehenga-choli-wholesale-in-surat-5067-olive/page-0.png"
                 alt="Modern Drapes Royal Mood"
                 fill
                 className="object-cover object-top"

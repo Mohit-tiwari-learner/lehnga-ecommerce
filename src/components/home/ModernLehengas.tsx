@@ -8,27 +8,27 @@ const MODERN_LEHENGAS_PRODUCTS: Product[] = [
     id: "leh-1",
     title: "Riva Maroon Indowestern Lehenga Set with Embroidered Cape",
     price: 44895,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/launching-navratri-special-soft-and-pure-cotton-fabric-lehenga-choli-wholesale-in-surat-581/page-0.png",
     shipsInDays: 21,
   },
   {
     id: "leh-2",
     title: "Utsara Blue Multicolour Lehenga Set with Zari Sequin Work",
     price: 26695,
-    image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/navratri-new-and-best-collection-tasar-silk-fancy-and-beautiful-fabric-lehenga-choli-reseller-in-surat-1734/page-0.png",
   },
   {
     id: "leh-3",
     title: "Liora Pink Sequin & Beadwork Lehenga Set",
     price: 18895,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/navratri-special-charmful-and-dazziing-faux-georgette-fancy-fabric-lehenga-choli-collections-wholesale-in-surat-lw-7134/page-0.png",
     shipsInDays: 21,
   },
   {
     id: "leh-4",
     title: "Calira Beige Beaded Indo-Western Lehenga Set",
     price: 23895,
-    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/navy-stunning-blue-beautiful-colour-in-soft-georgette-fabric-lehenga-choli-wholesale-in-surat-5067-blue/page-0.png",
   },
 ];
 
@@ -42,7 +42,7 @@ export function ModernLehengas() {
             <Link href="/collections/lehengas" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
                 <Image
-                  src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop"
+                  src="/extracted_photos/new-launch-soft-and-pure-tissue-silk-fabric-with-beautiful-embroidery-work-on-lehenga-choli-supplier-in-surat-haji/page-0.png"
                   alt="Modern Lehengas"
                   fill
                   className="object-cover"
@@ -61,7 +61,7 @@ export function ModernLehengas() {
             <Link href="/collections/lehengas" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden">
               <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
                 <Image
-                  src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+                  src="/extracted_photos/new-navratri-collection-made-of-soft-chinon-fabric-ready-to-wear-your-perfect-garba-look-awaits-wholesale-in-surat-1768/page-0.png"
                   alt="Indian Soul"
                   fill
                   className="object-cover"

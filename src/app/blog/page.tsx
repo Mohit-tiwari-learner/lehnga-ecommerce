@@ -9,7 +9,7 @@ const BLOG_POSTS = [
     excerpt: "Discover how contemporary brides are embracing the timeless elegance of handwoven Banarasi silk lehengas and sarees for their big day.",
     date: "June 15, 2026",
     category: "Bridal Trends",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+    image: "/extracted_photos/new-launch-soft-and-pure-tissue-silk-fabric-with-beautiful-embroidery-work-on-lehenga-choli-supplier-in-surat-haji/page-0.png"
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ const BLOG_POSTS = [
     excerpt: "Why the versatile co-ord set has become the go-to choice for pre-wedding festivities like Haldi and Mehendi.",
     date: "May 28, 2026",
     category: "Style Guide",
-    image: "https://images.unsplash.com/photo-1621272036047-bb0f76bbc1ad?q=80&w=800&auto=format&fit=crop"
+    image: "/extracted_photos/new-navratri-collection-made-of-soft-chinon-fabric-ready-to-wear-your-perfect-garba-look-awaits-wholesale-in-surat-1768/page-0.png"
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ const BLOG_POSTS = [
     excerpt: "Expert tips on maintaining the luster and longevity of your heavy bridal and festive ethnic wear.",
     date: "April 10, 2026",
     category: "Fabric Care",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+    image: "/extracted_photos/olive-green-elegant-colour-georgette-soft-fancy-fabric-lehenga-choli-wholesale-in-surat-5067-olive/page-0.png"
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ const BLOG_POSTS = [
     excerpt: "Finding the perfect balance between your outfit and accessories for a sophisticated bridal look.",
     date: "March 22, 2026",
     category: "Accessories",
-    image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=800&auto=format&fit=crop"
+    image: "/extracted_photos/premium-and-classic-fancy-satin-fabric-readymade-lehenga-choli-collections-wholesale-in-surat-7167/page-0.png"
   }
 ];
 

@@ -8,7 +8,7 @@ const OXIDIZED_JEWELLERY_PRODUCTS: Product[] = [
     id: "ox-1",
     title: "Peacock Charm Oxidised Jewellery Set with Earrings",
     price: 795,
-    image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/rakhi-special-crop-top-lehenga-choli-made-of-pure-chinon-fancy-fabric-supplier-in-surat-419/page-0.png",
     shipsInDays: 4,
     badge: "Restocked",
   },
@@ -16,20 +16,20 @@ const OXIDIZED_JEWELLERY_PRODUCTS: Product[] = [
     id: "ox-2",
     title: "Sharini Oxidised Tribal Ring",
     price: 250,
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/samairaa-from-ceremonial-moments-to-joyful-festivities-chocolate-crush-fabric-this-bridesmaid-lehenga-choli-1457/page-0.png",
   },
   {
     id: "ox-3",
     title: "Aira Knotted Oxidised Bangle",
     price: 495,
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/shahi-wedding-set-an-exquisite-blend-of-rich-silk-satin-fabric-detailed-embroidery-work-on-lehenga-choli-reseller-in-surat-1449/page-0.png",
     shipsInDays: 2,
   },
   {
     id: "ox-4",
     title: "Cosmic Cascade Earrings",
     price: 450,
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/soft-naysha-silk-fancy-fabric-with-embroidery-work-on-this-lehenga-collection-reseller-in-surat-1489/page-0.png",
     shipsInDays: 2,
   },
 ];
@@ -43,7 +43,7 @@ export function OxidizedElegance() {
           <Link href="/collections/oxidized-jewellery" className="block w-full h-full">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=1200&auto=format&fit=crop"
+                src="/extracted_photos/taddy-silk-fancy-and-beautiful-fabric-best-for-you-lehenga-choli-collections-supplier-in-surat-ka-5072/page-0.png"
                 alt="Oxidized Elegance"
                 fill
                 className="object-cover object-center"

@@ -8,7 +8,7 @@ const TEMPLE_JEWELLERY_PRODUCTS: Product[] = [
     id: "jewel-1",
     title: "Alora Pink Stone Long Kashmiri Earring",
     price: 4695,
-    image: "https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/beautiful-and-elegant-teal-green-colour-georgette-fabric-lehenga-choli-reseller-in-surat-5067-green/page-0.png",
     shipsInDays: 4,
     swatches: ["#ffc0cb", "#008000", "#ff0000", "#0000ff", "#ffffff"],
   },
@@ -16,21 +16,21 @@ const TEMPLE_JEWELLERY_PRODUCTS: Product[] = [
     id: "jewel-2",
     title: "Nayantara Pink Antique Jhumka Earrings",
     price: 1295,
-    image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/heavy-sparkling-and-beautiful-wine-colour-georgette-fancy-fabric-lehenga-choli-reseller-in-surat-5067-wine/page-0.png",
     swatches: ["#ffc0cb", "#ff0000", "#800080"],
   },
   {
     id: "jewel-3",
     title: "Mini Me White Drop Earrings",
     price: 995,
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/launching-navratri-special-georgettet-cotton-fancy-fabric-lehenga-choli-reseller-in-surat-582/page-0.png",
     swatches: ["#ffffff", "#ff0000", "#000000", "#ffd700", "#c0c0c0", "#ffc0cb"],
   },
   {
     id: "jewel-4",
     title: "Arohi Mint Multi Dangle Kashmiri Earring",
     price: 4795,
-    image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/launching-navratri-special-soft-and-pure-cotton-fabric-lehenga-choli-wholesale-in-surat-581/page-0.png",
   },
 ];
 
@@ -43,7 +43,7 @@ export function TempleJewellery() {
           <Link href="/collections/temple-jewellery" className="block w-full h-full">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1599643478524-fb66f724d1ea?q=80&w=1200&auto=format&fit=crop"
+                src="/extracted_photos/navratri-new-and-best-collection-tasar-silk-fancy-and-beautiful-fabric-lehenga-choli-reseller-in-surat-1734/page-0.png"
                 alt="Gajmangal Temple Jewellery"
                 fill
                 className="object-cover object-center"

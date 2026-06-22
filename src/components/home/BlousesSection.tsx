@@ -8,14 +8,14 @@ const BLOUSES_PRODUCTS: Product[] = [
     id: "blouse-1",
     title: "Sadhana Black Cotton Blouse with Printed Detail",
     price: 1895,
-    image: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/pure-and-soft-dolla-silk-fancy-fabric-with-beautiful-digital-print-on-chaniya-choli-reseller-in-surat-pratha/page-0.png",
     shipsInDays: 4,
   },
   {
     id: "blouse-2",
     title: "Nirva Cream Assorted Modal Silk Printed Blouse",
     price: 2195,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/rakhi-special-crop-top-lehenga-choli-made-of-pure-chinon-fancy-fabric-supplier-in-surat-419/page-0.png",
     shipsInDays: 4,
     swatches: ["#f5f5dc", "#800000", "#000000", "#ff0000", "#0000ff"],
   },
@@ -23,7 +23,7 @@ const BLOUSES_PRODUCTS: Product[] = [
     id: "blouse-3",
     title: "Gajgamini Red Cotton Printed Blouse Collection",
     price: 1995,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/samairaa-from-ceremonial-moments-to-joyful-festivities-chocolate-crush-fabric-this-bridesmaid-lehenga-choli-1457/page-0.png",
     shipsInDays: 4,
     swatches: ["#ff0000", "#000000", "#ffffff", "#ffff00", "#800080"],
   },
@@ -31,7 +31,7 @@ const BLOUSES_PRODUCTS: Product[] = [
     id: "blouse-4",
     title: "Nandi Blue Cotton Printed Blouse",
     price: 1995,
-    image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/shahi-wedding-set-an-exquisite-blend-of-rich-silk-satin-fabric-detailed-embroidery-work-on-lehenga-choli-reseller-in-surat-1449/page-0.png",
     shipsInDays: 4,
     swatches: ["#0000ff", "#ffffff", "#000000", "#ff0000", "#800080", "#ffff00", "#008000", "#ffa500", "#808080", "#a52a2a"],
   },
@@ -47,7 +47,7 @@ export function BlousesSection() {
           <Link href="/collections/blouses" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden bg-[#e5dfd3]">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=800&auto=format&fit=crop"
+                src="/extracted_photos/soft-naysha-silk-fancy-fabric-with-embroidery-work-on-this-lehenga-collection-reseller-in-surat-1489/page-0.png"
                 alt="Statement Blouses"
                 fill
                 className="object-cover"
@@ -68,7 +68,7 @@ export function BlousesSection() {
           <Link href="/collections/blouses" className="relative group flex-1 aspect-[16/9] md:aspect-[4/3] overflow-hidden bg-[#d3d9e5]">
             <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
               <Image
-                src="https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop"
+                src="/extracted_photos/taddy-silk-fancy-and-beautiful-fabric-best-for-you-lehenga-choli-collections-supplier-in-surat-ka-5072/page-0.png"
                 alt="Everyday Elevated"
                 fill
                 className="object-cover"

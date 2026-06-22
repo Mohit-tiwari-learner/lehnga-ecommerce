@@ -8,28 +8,28 @@ const BLOGS = [
     title: "My Daftar Fits",
     date: "12 Oct 2023",
     description: "Discover our top picks for comfortable yet stylish everyday office wear. Because looking professional doesn't mean compromising on your personal style.",
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/navy-stunning-blue-beautiful-colour-in-soft-georgette-fabric-lehenga-choli-wholesale-in-surat-5067-blue/page-0.png",
   },
   {
     id: 2,
     title: "Suit Up in Style",
     date: "28 Sep 2023",
     description: "A comprehensive guide on styling our bestselling suit sets for the upcoming festive season. Tips from our in-house stylists.",
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/new-launch-soft-and-pure-tissue-silk-fabric-with-beautiful-embroidery-work-on-lehenga-choli-supplier-in-surat-haji/page-0.png",
   },
   {
     id: 3,
     title: "Latest Indo-fits Trends",
     date: "15 Sep 2023",
     description: "Blurring the lines between traditional and contemporary fashion. Explore how Indo-western fusion is taking over the wedding scenes.",
-    image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/new-navratri-collection-made-of-soft-chinon-fabric-ready-to-wear-your-perfect-garba-look-awaits-wholesale-in-surat-1768/page-0.png",
   },
   {
     id: 4,
     title: "A Guide to Choosing the Perfect Blouse",
     date: "02 Sep 2023",
     description: "Necklines, sleeves, and fits. Everything you need to know before getting your next statement blouse stitched.",
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/olive-green-elegant-colour-georgette-soft-fancy-fabric-lehenga-choli-wholesale-in-surat-5067-olive/page-0.png",
   },
 ];
 

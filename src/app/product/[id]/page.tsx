@@ -26,8 +26,8 @@ const CRAFT_DETAILS: Record<string, {
     techniqueDesc: "Woven on traditional wooden looms in small artisan clusters, this piece utilizes age-old methods of interlocking warp and weft threads to create a durable, lustrous silk finish.",
     artisanName: "Sohan Lal & Weavers of Kashi",
     artisanDesc: "Crafted by master weavers whose families have kept the handloom heritage alive for six generations. Every border and motif is hand-threaded with metallic zari.",
-    imageLeft: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
-    imageRight: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    imageLeft: "/extracted_photos/premium-and-classic-fancy-satin-fabric-readymade-lehenga-choli-collections-wholesale-in-surat-7167/page-0.png",
+    imageRight: "/extracted_photos/premium-and-designer-shiny-gold-crush-fancy-fabric-lehenga-choli-wholesale-in-surat-ka-5058/page-0.png",
     materials: ["Pure Mulberry Silk threads", "Metallic Gold Zari threads", "Organic vegetable dyes"]
   },
   "lehengas": {
@@ -35,8 +35,8 @@ const CRAFT_DETAILS: Record<string, {
     techniqueDesc: "Each panel is carefully mounted on an embroidery frame (Adda) and meticulously embellished by hand with glass beads, faux pearls, metallic wires, and sequins.",
     artisanName: "Aftab & Zardozi Artisans",
     artisanDesc: "Worked on for over 45 hours by highly skilled zardozi craftsmen. This detailing offers a rich, three-dimensional look that catches light from every angle.",
-    imageLeft: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
-    imageRight: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    imageLeft: "/extracted_photos/pure-and-soft-dolla-silk-fancy-fabric-with-beautiful-digital-print-on-chaniya-choli-reseller-in-surat-pratha/page-0.png",
+    imageRight: "/extracted_photos/rakhi-special-crop-top-lehenga-choli-made-of-pure-chinon-fancy-fabric-supplier-in-surat-419/page-0.png",
     materials: ["Faux Seed Pearls", "Metallic bullion wire (dabka)", "Lightweight fine net mesh"]
   },
   "kurta-and-beyond": {
@@ -44,8 +44,8 @@ const CRAFT_DETAILS: Record<string, {
     techniqueDesc: "Hand-carved wooden blocks are dipped in natural dyes and stamped onto breathable cotton and modal silk fabrics, creating natural variations that make every piece unique.",
     artisanName: "Jaipur Printers Guild",
     artisanDesc: "Printed in Jaipur using ancient printing mud-resist recipes. Completed with handmade tassels and side-slits tailored for comfort.",
-    imageLeft: "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=600&auto=format&fit=crop",
-    imageRight: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    imageLeft: "/extracted_photos/samairaa-from-ceremonial-moments-to-joyful-festivities-chocolate-crush-fabric-this-bridesmaid-lehenga-choli-1457/page-0.png",
+    imageRight: "/extracted_photos/shahi-wedding-set-an-exquisite-blend-of-rich-silk-satin-fabric-detailed-embroidery-work-on-lehenga-choli-reseller-in-surat-1449/page-0.png",
     materials: ["100% Breathable Cotton", "Natural indigo & madder root dyes", "Hand-braided cotton tassels"]
   }
 };
@@ -55,16 +55,16 @@ const DEFAULT_CRAFT_DETAILS = {
   techniqueDesc: "Made with precise craftsmanship and premium fabrics. Tailored using double-stitched seams and finished with delicate custom details.",
   artisanName: "Nakhrali Tailoring Guild",
   artisanDesc: "Meticulously designed and checked by our local production unit, supporting ethical labor standards and small artisan businesses.",
-  imageLeft: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
-  imageRight: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+  imageLeft: "/extracted_photos/soft-naysha-silk-fancy-fabric-with-embroidery-work-on-this-lehenga-collection-reseller-in-surat-1489/page-0.png",
+  imageRight: "/extracted_photos/taddy-silk-fancy-and-beautiful-fabric-best-for-you-lehenga-choli-collections-supplier-in-surat-ka-5072/page-0.png",
   materials: ["Premium blended fibers", "Eco-friendly dyes", "Polished metallic buttons"]
 };
 
 // Styled matching accessories to Complete The Look
 const ACCESSORIES = [
-  { id: "acc1", name: "Oxidised Choker Set with Pearls", price: 2450, image: "https://images.unsplash.com/photo-1599643478524-fb66f70d00ea?q=80&w=300&auto=format&fit=crop" },
-  { id: "acc2", name: "Sharini Oxidised Tribal Ring", price: 250, image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=300&auto=format&fit=crop" },
-  { id: "acc3", name: "Hand-woven Silk Juttis", price: 1895, image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=300&auto=format&fit=crop" }
+  { id: "acc1", name: "Oxidised Choker Set with Pearls", price: 2450, image: "/extracted_photos/this-purple-colour-pure-rayon-beautiful-floral-lehenga-choli-is-my-ode-to-the-season-of-navratri-reseller-in-surat-1618/page-0.png" },
+  { id: "acc2", name: "Sharini Oxidised Tribal Ring", price: 250, image: "/extracted_photos/wedding-collection-where-rich-natural-silk-meets-craftsmanship-and-vibrant-pink-glow-lehenga-choli-1459/page-0.png" },
+  { id: "acc3", name: "Hand-woven Silk Juttis", price: 1895, image: "/extracted_photos/beautiful-and-elegant-teal-green-colour-georgette-fabric-lehenga-choli-reseller-in-surat-5067-green/page-0.png" }
 ];
 
 export default function ProductPage({ params }: { params: Promise<{ id: string }> }) {
@@ -92,7 +92,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         id: resolvedParams.id,
         title: "Signature Nakhrali Handloom Outfit",
         price: 18995,
-        image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
+        image: "/extracted_photos/heavy-sparkling-and-beautiful-wine-colour-georgette-fancy-fabric-lehenga-choli-reseller-in-surat-5067-wine/page-0.png",
         shipsInDays: 4,
       },
       category: "sarees"
@@ -107,9 +107,9 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
     ? [product.image, ...product.gallery]
     : [
         product.image,
-        "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=800&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=800&auto=format&fit=crop"
+        "/extracted_photos/launching-navratri-special-georgettet-cotton-fancy-fabric-lehenga-choli-reseller-in-surat-582/page-0.png",
+        "/extracted_photos/launching-navratri-special-soft-and-pure-cotton-fabric-lehenga-choli-wholesale-in-surat-581/page-0.png",
+        "/extracted_photos/navratri-new-and-best-collection-tasar-silk-fancy-and-beautiful-fabric-lehenga-choli-reseller-in-surat-1734/page-0.png"
       ];
 
   const handleAddToCart = () => {

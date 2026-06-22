@@ -1295,28 +1295,28 @@ export const DEFAULT_PRODUCTS: Product[] = [
     id: "def1",
     title: "Signature Collection Piece",
     price: 15000,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/olive-green-elegant-colour-georgette-soft-fancy-fabric-lehenga-choli-wholesale-in-surat-5067-olive/page-0.png",
     shipsInDays: 5,
   },
   {
     id: "def2",
     title: "Elegant Ethnic Wear",
     price: 18500,
-    image: "https://images.unsplash.com/photo-1596450514735-111a2fe02935?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/premium-and-classic-fancy-satin-fabric-readymade-lehenga-choli-collections-wholesale-in-surat-7167/page-0.png",
     shipsInDays: 3,
   },
   {
     id: "def3",
     title: "Premium Designer Outfit",
     price: 25000,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/premium-and-designer-shiny-gold-crush-fancy-fabric-lehenga-choli-wholesale-in-surat-ka-5058/page-0.png",
     shipsInDays: 7,
   },
   {
     id: "def4",
     title: "Festive Ready Attire",
     price: 21000,
-    image: "https://images.unsplash.com/photo-1615886753866-79396abc446e?q=80&w=600&auto=format&fit=crop",
+    image: "/extracted_photos/pure-and-soft-dolla-silk-fancy-fabric-with-beautiful-digital-print-on-chaniya-choli-reseller-in-surat-pratha/page-0.png",
     shipsInDays: 4,
   }
 ];

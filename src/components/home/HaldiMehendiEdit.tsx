@@ -10,7 +10,7 @@ export function HaldiMehendiEdit() {
         <Link href="/collections/haldi-mehendi" className="relative group flex-1 aspect-[3/4] md:aspect-[4/5] overflow-hidden">
           <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
             <Image
-              src="https://images.unsplash.com/photo-1604904612715-47bf9d9bc670?q=80&w=800&auto=format&fit=crop"
+              src="/extracted_photos/samairaa-from-ceremonial-moments-to-joyful-festivities-chocolate-crush-fabric-this-bridesmaid-lehenga-choli-1457/page-0.png"
               alt="Purple Embroidered Dress"
               fill
               className="object-cover"
@@ -24,7 +24,7 @@ export function HaldiMehendiEdit() {
         <Link href="/collections/haldi-mehendi" className="relative group flex-1 aspect-[3/4] md:aspect-[4/5] overflow-hidden">
           <div className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105">
             <Image
-              src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=800&auto=format&fit=crop"
+              src="/extracted_photos/shahi-wedding-set-an-exquisite-blend-of-rich-silk-satin-fabric-detailed-embroidery-work-on-lehenga-choli-reseller-in-surat-1449/page-0.png"
               alt="Yellow Pink Lehenga"
               fill
               className="object-cover"

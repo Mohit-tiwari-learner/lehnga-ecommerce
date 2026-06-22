@@ -24,7 +24,7 @@ export default function AboutPage() {
         {/* Hero Image */}
         <div className="relative w-full aspect-[21/9] md:aspect-[21/9] mb-16">
           <Image 
-            src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?q=80&w=1200&auto=format&fit=crop"
+            src="/extracted_photos/beautiful-and-elegant-teal-green-colour-georgette-fabric-lehenga-choli-reseller-in-surat-5067-green/page-0.png"
             alt="Nakhrali Heritage"
             fill
             className="object-cover object-top"
