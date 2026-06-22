@@ -36,6 +36,16 @@ body {
   background: #a38c5b; 
 }
 
+@layer utilities {
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
 /* Lenis smooth scrolling defaults */
 html.lenis, html.lenis body {
   height: auto;

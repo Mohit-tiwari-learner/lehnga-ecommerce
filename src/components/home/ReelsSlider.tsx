@@ -95,11 +95,6 @@ export function ReelsSlider() {
         <ChevronRight size={20} className="text-gray-800" />
       </button>
 
-      <style jsx>{`
-        .hide-scrollbar::-webkit-scrollbar {
-          display: none;
-        }
-      `}</style>
     </div>
   );
 }
