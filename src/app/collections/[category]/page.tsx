@@ -144,6 +144,15 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
   const [sortOpen, setSortOpen] = useState(false);
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
 
+  // Filters State
+  const [sortBy, setSortBy] = useState<string>("Featured");
+  const [inStockOnly, setInStockOnly] = useState(false);
+  const [selectedSizes, setSelectedSizes] = useState<string[]>([]);
+  const [selectedFabrics, setSelectedFabrics] = useState<string[]>([]);
+  const [selectedWorks, setSelectedWorks] = useState<string[]>([]);
+  const [minPrice, setMinPrice] = useState<number>(0);
+  const [maxPrice, setMaxPrice] = useState<number>(100000);
+
   const categoryKey = resolvedParams.category.toLowerCase();
   const categoryName = resolvedParams.category.replace(/-/g, " ").charAt(0).toUpperCase() + resolvedParams.category.replace(/-/g, " ").slice(1);
   
@@ -155,6 +164,31 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
   const toggleFaq = (index: number) => {
     setActiveFaq(activeFaq === index ? null : index);
   };
+
+  const handleCheckbox = (setter: React.Dispatch<React.SetStateAction<string[]>>, val: string) => {
+    setter(prev => prev.includes(val) ? prev.filter(item => item !== val) : [...prev, val]);
+  };
+
+  // Compute products
+  const baseProducts = MOCK_PRODUCTS[categoryKey] || DEFAULT_PRODUCTS;
+  let filteredProducts = baseProducts.filter(p => {
+    if (p.price < minPrice || p.price > maxPrice) return false;
+    if (selectedFabrics.length > 0) {
+      if (!selectedFabrics.some(f => p.title.toLowerCase().includes(f.toLowerCase()))) return false;
+    }
+    if (selectedWorks.length > 0) {
+      if (!selectedWorks.some(w => p.title.toLowerCase().includes(w.toLowerCase()))) return false;
+    }
+    return true;
+  });
+
+  if (sortBy === "Price: Low to High") {
+    filteredProducts = [...filteredProducts].sort((a, b) => a.price - b.price);
+  } else if (sortBy === "Price: High to Low") {
+    filteredProducts = [...filteredProducts].sort((a, b) => b.price - a.price);
+  } else if (sortBy === "Best Selling") {
+    filteredProducts = [...filteredProducts].sort((a, b) => a.id.localeCompare(b.id));
+  }
 
   return (
     <div className="w-full bg-white min-h-screen pb-16">
@@ -234,10 +268,10 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
             </button>
             {sortOpen && (
               <div className="absolute right-0 top-full mt-1 w-48 bg-white border border-gray-150 shadow-lg z-20 font-sans text-xs">
-                <button className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-50 text-gray-700">Featured</button>
-                <button className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-50 text-gray-700">Best Selling</button>
-                <button className="w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-50 text-gray-700">Price: Low to High</button>
-                <button className="w-full text-left px-4 py-3 hover:bg-gray-50 text-gray-700">Price: High to Low</button>
+                <button onClick={() => { setSortBy("Featured"); setSortOpen(false); }} className={`w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-50 ${sortBy === "Featured" ? "text-rajgharana-gold font-medium" : "text-gray-700"}`}>Featured</button>
+                <button onClick={() => { setSortBy("Best Selling"); setSortOpen(false); }} className={`w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-50 ${sortBy === "Best Selling" ? "text-rajgharana-gold font-medium" : "text-gray-700"}`}>Best Selling</button>
+                <button onClick={() => { setSortBy("Price: Low to High"); setSortOpen(false); }} className={`w-full text-left px-4 py-3 hover:bg-gray-50 border-b border-gray-50 ${sortBy === "Price: Low to High" ? "text-rajgharana-gold font-medium" : "text-gray-700"}`}>Price: Low to High</button>
+                <button onClick={() => { setSortBy("Price: High to Low"); setSortOpen(false); }} className={`w-full text-left px-4 py-3 hover:bg-gray-50 ${sortBy === "Price: High to Low" ? "text-rajgharana-gold font-medium" : "text-gray-700"}`}>Price: High to Low</button>
               </div>
             )}
           </div>
@@ -266,11 +300,11 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
                   <div className="flex items-center justify-between gap-4 font-sans text-xs">
                     <div className="flex items-center border border-gray-200 px-3 py-2 flex-1">
                       <span className="text-gray-400 mr-1">₹</span>
-                      <input type="text" value="1,995" readOnly className="w-full outline-none text-gray-700 bg-transparent font-medium" />
+                      <input type="number" value={minPrice} onChange={(e) => setMinPrice(Number(e.target.value))} className="w-full outline-none text-gray-700 bg-transparent font-medium" />
                     </div>
                     <div className="flex items-center border border-gray-200 px-3 py-2 flex-1">
                       <span className="text-gray-400 mr-1">₹</span>
-                      <input type="text" value="44,895" readOnly className="w-full outline-none text-gray-700 bg-transparent font-medium" />
+                      <input type="number" value={maxPrice} onChange={(e) => setMaxPrice(Number(e.target.value))} className="w-full outline-none text-gray-700 bg-transparent font-medium" />
                     </div>
                   </div>
                 </div>
@@ -278,7 +312,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
                 {/* Display In-stock */}
                 <div className="border-b border-gray-100 pb-8">
                   <label className="flex items-center gap-3 cursor-pointer">
-                    <input type="checkbox" className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
+                    <input type="checkbox" checked={inStockOnly} onChange={(e) => setInStockOnly(e.target.checked)} className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
                     <span className="font-sans text-[13px] text-gray-700 tracking-wider">Display In-stock Only</span>
                   </label>
                 </div>
@@ -289,7 +323,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
                   <div className="space-y-3">
                     {FILTER_SIZES.slice(1, 6).map(size => (
                       <label key={size} className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
+                        <input type="checkbox" checked={selectedSizes.includes(size)} onChange={() => handleCheckbox(setSelectedSizes, size)} className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
                         <span className="font-sans text-[13px] text-gray-600">{size}</span>
                       </label>
                     ))}
@@ -302,7 +336,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
                   <div className="space-y-3 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
                     {FILTER_FABRICS.map(fabric => (
                       <label key={fabric} className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
+                        <input type="checkbox" checked={selectedFabrics.includes(fabric)} onChange={() => handleCheckbox(setSelectedFabrics, fabric)} className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
                         <span className="font-sans text-[13px] text-gray-600">{fabric}</span>
                       </label>
                     ))}
@@ -315,7 +349,7 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
                   <div className="space-y-3 max-h-[220px] overflow-y-auto pr-2 custom-scrollbar">
                     {FILTER_WORKS.slice(0, 6).map(work => (
                       <label key={work} className="flex items-center gap-3 cursor-pointer">
-                        <input type="checkbox" className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
+                        <input type="checkbox" checked={selectedWorks.includes(work)} onChange={() => handleCheckbox(setSelectedWorks, work)} className="w-[18px] h-[18px] border-gray-300 rounded-sm accent-[#111111]" />
                         <span className="font-sans text-[13px] text-gray-600">{work}</span>
                       </label>
                     ))}
@@ -342,11 +376,31 @@ export default function CollectionPage({ params }: { params: Promise<{ category:
 
           {/* Product Grid Area */}
           <div className="flex-1">
-            <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-10 md:gap-x-6 md:gap-y-12">
-              {(MOCK_PRODUCTS[categoryKey] || DEFAULT_PRODUCTS).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
+            <div className="flex justify-between items-center mb-6">
+              <span className="font-sans text-xs text-gray-500 tracking-wider uppercase">{filteredProducts.length} Products Found</span>
             </div>
+            
+            {filteredProducts.length > 0 ? (
+              <div className="grid grid-cols-2 md:grid-cols-2 xl:grid-cols-3 gap-x-4 gap-y-10 md:gap-x-6 md:gap-y-12">
+                {filteredProducts.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
+            ) : (
+              <div className="w-full flex flex-col items-center justify-center py-20 bg-gray-50 rounded-sm border border-gray-100">
+                <span className="font-serif text-2xl text-[#111111] mb-2">No Products Found</span>
+                <p className="font-sans text-sm text-gray-500 mb-6">Try adjusting your filters or price range.</p>
+                <button 
+                  onClick={() => {
+                    setMinPrice(0); setMaxPrice(100000);
+                    setSelectedFabrics([]); setSelectedWorks([]); setSelectedSizes([]); setInStockOnly(false);
+                  }}
+                  className="px-6 py-2 bg-[#111111] text-white font-sans text-xs uppercase tracking-widest"
+                >
+                  Clear Filters
+                </button>
+              </div>
+            )}
           </div>
 
         </div>
